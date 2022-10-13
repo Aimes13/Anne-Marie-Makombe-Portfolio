@@ -77,11 +77,15 @@ html {
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    height: 3rem;
     border-radius: 4px;
     background-color: rebeccapurple;
     padding: 1rem;
     margin: 1rem 0;
-    font-size: 1.5rem;
     font-family: 'Roboto Mono';
     color: white;
 }
@@ -100,7 +104,7 @@ h2 {
     color: whitesmoke;
     font-size: 2rem;
     letter-spacing: 0.5rem;
-    width: 100%;
+    width: 90%;
     text-align: center;
     padding: 1rem 0;
 }
@@ -234,7 +238,7 @@ header .mobile {
 }
 
 /* Projects Section */
-#projects-section, #projects-container, .pbox, .code-box {
+#projects-section, #projects-container, .pbox, .code-box, .topbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,7 +297,7 @@ span {
 }
 
 /* Contact Section */
-#contact-section, #contact-container {
+#contact-section, #contact-container, #contactInfo-box, #contact-box, #form-box, #form-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,9 +310,48 @@ span {
     padding: 0 0.5rem;
 }
 
-#contact-box, #form-box {
+#form-box {
+    width: 85%;
+}
+
+#contact-box {
+    background-color: palegoldenrod;
+    margin-top: 1rem;
+    width: 87%;
+}
+
+form, .contact-message {
     width: 100%;
-    border: 1px solid red;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contact-name, .contact-email {
+    width: 47%;
+}
+
+.contact-name input, .contact-email input, textarea {
+    width: 95%;
+}
+
+.contact-name input, .contact-email input {
+    height: 2rem;
+}
+
+#form-container button {
+    font-size: 1.2rem;
+    height: 2rem;
+}
+
+#form-container button:active {
+    box-shadow: inset -2px -2px 3px rgba(191, 64, 191, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 /* Footer Section*/
