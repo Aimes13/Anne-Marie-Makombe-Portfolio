@@ -33,16 +33,34 @@
             <div id="contact-container">
                 <h2>Contact Me</h2>
                 <div id="contactInfo-box">
-                    <p>I am currently taking on freelance work. If you are interested in hiring me for your project please use the form below to get in touch.</p>
+                    <p>I am currently taking on freelance work. <br> If you are interested in hiring me for your project please use the form below to get in touch.</p>
                 </div>
                 <div id="contact-box">
                     <h3>Get In Touch</h3>
                     <div id="form-box">
-
+                      <form action="mailto:annemariemakombe@gmail.com" method="POST">
+                        <div id="form-container">
+                          <div class="contact-name">
+                            <label class="sr-only" for="cname"></label>
+                            <input type="text" class="form-control" name="name" id="cname" placeholder="Name" minlength="2" required aria-required="true">
+                          </div>
+                          <div class="contact-email">
+                            <label class="sr-only" for="cemail"></label>
+                            <input type="email" class="form-control" name="email" id="cemail" placeholder="Email" required aria-required="true">
+                          </div>
+                          <div class="contact-message">
+                            <label class="sr-only" for="cmessage"></label>
+                            <textarea class="form-control" name="message" id="cmessage" placeholder="Enter your message" rows="10" required aria-required="true"></textarea>
+                          </div>
+                          <div>
+                            <button type="submit" class="btn" value="Send">Send</button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                 </div>
             </div>
-            <button class="link-button"><a href="./index.html">Link to Home Page</a></button>
+            <button class="link-button"><a href="./index.html">Go to Home Page</a></button>
         </div>
         <!--Footer Section-->
         <div id="footer" class="footer content">
