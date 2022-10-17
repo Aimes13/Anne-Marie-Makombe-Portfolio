@@ -12,27 +12,29 @@
         <!--Header Section-->
         <header>
             <div id="header-section" class="center">
-              <div class="content">
-                <div class="logo">Anne-Marie Makombe</div>          
-                <nav class="desktop">
-                  <ul>
-                    <li><a href="./index.html">About</a></li>
-                    <li><a href="#skills-section">Skills</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-                <nav class="mobile">
-                  <ul>
-                    <li><a href="./index.html"><img src="./resources/logos/Picture2-black.jpg"></a></li>
-                    <li><a href="#skills-section"><img src="./resources/images/ic-product-detail.svg"></a></li>
-                    <li><a href="./projects.html"><img src="./resources/images/ic-about-us.svg"></a></li>
-                    <li><a href="./contact.html" class="button">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>
+                <div class="content">
+                    <div class="name">Anne-Marie Makombe</div>          
+                    <nav class="desktop">
+                        <ul>
+                            <li><a href="./index.html">About</a></li>
+                            <li><a href="#skills-section">Skills</a></li>
+                            <li><a href="./projects.html">Projects</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="companylogo">
+                        <img id="amm" src="./Images/logo.png" alt="">
+                        <img onclick="myFunction()" id="menuButton" class="dropmenu" src="https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" alt="">
+                    </div>
+                    <div id="menu" class="mobile">
+                        <a href="./index.html">Home</a>
+                        <a href="#skills-section">Skills</a>
+                        <a href="./projects.html">Projects</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
-          </header>
+        </header>
         <!--About Section-->
         <div id="about-section" class="about content">
             <h2>About Me</h2>
@@ -83,5 +85,6 @@
             </div>
         </div>
 
+        <script src="./menu.js"></script>
     </body>
 </html>

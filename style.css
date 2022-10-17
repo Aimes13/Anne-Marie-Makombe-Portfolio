@@ -82,6 +82,50 @@ a {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 760px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+        padding: 0.5rem 0;
+    }
+    
+    .content {
+        font-size: 1.2rem;
+    }
+    
+    button {
+        font-size: 1.2rem;
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    h2 {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .content {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        height: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+    }
+}
+
 /* Header */
 header {
     width: 100%;
@@ -90,11 +134,12 @@ header {
 header .content {
     display: flex;
     align-items: center;
+    flex-direction: column;
     padding: 0.5rem;
     background-color: black;
 }
   
-header .logo {
+header .name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,8 +173,102 @@ nav a:hover {
     font-size: 2.2rem;
 }
 
-header .mobile {
+.mobile, .companylogo {
     display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    header .name {
+        height: 3rem;
+        font-size: 1.9rem;
+    }
+      
+    nav li {
+        padding-left: 1rem;
+    }
+    
+    nav a {
+        font-size: 1.4rem;
+    }
+    
+    nav a:hover {
+        font-size: 1.8rem;
+    }    
+}
+
+@media only screen and (max-width: 740px) {
+    header .name, .desktop {
+        display: none;
+    }
+    
+    .companylogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .companylogo img {
+        max-height: 5rem;
+    }
+
+    #amm {
+        border-radius: 5%;
+    }
+    
+    #menuButton {
+        height: 4rem;
+        cursor: pointer;
+    }
+
+    #menuButton:focus {
+        border: 2px solid white;
+    }
+
+    .mobile {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(67,78,94, 1);;
+        overflow: auto;
+        z-index: 1;
+        width: 97.5%;
+        top: 6.4rem;
+    }
+
+    .mobile a {
+        color: white;
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+        width: 100%;
+        padding: 0.5rem;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    .show {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .companylogo img {
+        max-height: 4rem;
+    }
+
+    #menuButton {
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .companylogo img {
+        max-height: 3.5rem;
+    }
+
+    #menuButton {
+        height: 2.5rem;
+    }
 }
 
 /* About Section */
@@ -165,6 +304,77 @@ header .mobile {
     margin-right: 5rem;
 }
 
+@media only screen and (max-width: 760px) {
+    #about-container {
+        flex-direction: column;
+    }
+
+    #about-boxes {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #about1-box, #about2-box {
+        width: 50%;
+        height: 14rem;
+        margin: 1rem;
+    }
+    
+    #pic-box img {
+        margin-right: 0;
+        height: 18rem;
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #about1-box, #about2-box {
+        height: 16rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #about1-box, #about2-box {
+        height: 19rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #about-boxes {
+        flex-direction: column;
+    }
+    
+    #about1-box, #about2-box {
+        width: 90%;
+        height: auto;
+    }
+
+    #pic-box img {
+        height: 15rem;
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #about-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #pic-box img {
+        height: 11rem;
+        width: 11rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #about-container {
+        width: 100%;
+    }
+}
+
 /* Skills Section */
 #skills-section, #skills-container, #logo-box {
     display: flex;
@@ -188,6 +398,70 @@ header .mobile {
     max-height: 8rem;
     max-width: 10rem;
     padding: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+    #skills-container {
+        padding-bottom: 1rem;
+        width: 85%;
+    }
+    
+    #logo-box {
+        padding-top: 1rem;
+    }
+    
+    #logo-box img {
+        max-height: 7rem;
+        max-width: 9rem;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    #skills-container {
+        padding: 0 1rem;
+    }
+    
+    #logo-box {
+        padding-top: 0;
+    }
+
+    #logo-box img {
+        max-height: 6rem;
+        max-width: 8rem;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #skills-container {
+        padding: 0 0.5rem;
+    }
+    
+    #logo-box img {
+        max-height: 5rem;
+        max-width: 7rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #logo-box img {
+        max-height: 4rem;
+        max-width: 6rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #logo-box img {
+        max-height: 3rem;
+        max-width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #logo-box img {
+        max-height: 2.9rem;
+        max-width: 4.9rem;
+    }
 }
 
 /* Projects Section */
@@ -346,4 +620,54 @@ form, .contact-message {
 #footer img {
     height: 3rem;
     padding-right: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+    #footer {
+        font-size: 1.3rem;
+    }
+    
+    #footer img {
+        height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #icon p {
+        display: none;
+    }
+
+    #footer img {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #footer {
+        font-size: 1.1rem;
+    }
+    
+    #footer img {
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #footer {
+        font-size: 0.9rem;
+    }
+    
+    #footer img {
+        height: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #footer {
+        font-size: 0.8rem;
+    }
+    
+    #footer img {
+        height: 1.2rem;
+    }
 }
