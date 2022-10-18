@@ -60,11 +60,6 @@ button {
     background-color: lavender;
 }
 
-h1 {
-    font-family: "Merriweather";
-    font-size: 3rem;
-}
-
 h2 {
     background-color: rebeccapurple;
     color: whitesmoke;
@@ -82,11 +77,82 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 760px) {
-    h1 {
-        font-size: 1.9rem;
+@media only screen and (max-width: 2000px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    .content {
+        font-size: 2.3rem;
+    }
+
+    button {
+        font-size: 2.3rem;
+        height: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    .content {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 2rem;
+        height: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .content {
+        font-size: 1.6rem;
+    }
+
+    button {
+        font-size: 1.6rem;
+        height: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    h2 {
+        font-size: 1.7rem;
     }
     
+    .content {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 1.3rem;
+        height: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     h2 {
         font-size: 1.7rem;
         padding: 0.5rem 0;
@@ -134,7 +200,6 @@ header {
 header .content {
     display: flex;
     align-items: center;
-    flex-direction: column;
     padding: 0.5rem;
     background-color: black;
 }
@@ -177,7 +242,105 @@ nav a:hover {
     display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 2000px) {
+    nav a {
+        line-height: 2.6;
+        font-size: 2.8rem;
+    }
+    
+    nav a:hover {
+        font-size: 3.2rem;
+    }    
+}
+
+@media only screen and (max-width: 1600px) {
+    header .name {
+        height: 7rem;
+        font-size: 4rem;
+    }
+
+    nav a {
+        line-height: 2.3;
+        font-size: 2.5rem;
+    }
+    
+    nav a:hover {
+        font-size: 2.9rem;
+    }    
+}
+
+@media only screen and (max-width: 1400px) {
+    header .name {
+        height: 6rem;
+        font-size: 3rem;
+    }
+
+    nav a {
+        line-height: 1.6;
+        font-size: 1.8rem;
+    }
+    
+    nav a:hover {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header .name {
+        height: 5.4rem;
+        font-size: 2.7rem;
+    }
+
+    nav a {
+        line-height: 1.4;
+        font-size: 1.6rem;
+    }
+    
+    nav a:hover {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    header .name {
+        height: 4.8rem;
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header .name {
+        height: 3.6rem;
+        font-size: 1.9rem;
+    }
+
+    nav a {
+        line-height: 1.6;
+        font-size: 1.4rem;
+    }
+    
+    nav a:hover {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header .name {
+        height: 3.4rem;
+        font-size: 1.7rem;
+    }
+
+    nav a {
+        line-height: 1.4;
+        font-size: 1.2rem;
+    }
+    
+    nav a:hover {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     header .name {
         height: 3rem;
         font-size: 1.9rem;
@@ -201,6 +364,10 @@ nav a:hover {
         display: none;
     }
     
+    header .content {
+        flex-direction: column;
+    }
+
     .companylogo {
         display: flex;
         justify-content: space-between;
@@ -304,7 +471,42 @@ nav a:hover {
     margin-right: 5rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 2000px) {
+    #pic-box img {
+        height: 40rem;
+        width: 40rem;
+    }    
+}
+
+@media only screen and (max-width: 1600px) {
+    #pic-box img {
+        height: 35rem;
+        width: 35rem;
+    }    
+}
+
+@media only screen and (max-width: 1400px) {
+    #pic-box img {
+        height: 30rem;
+        width: 30rem;
+    }    
+}
+
+@media only screen and (max-width: 1100px) {
+    #pic-box img {
+        height: 25rem;
+        width: 25rem;
+    }    
+}
+
+@media only screen and (max-width: 900px) {
+    #pic-box img {
+        height: 20rem;
+        width: 20rem;
+    }    
+}
+
+@media only screen and (max-width: 800px) {
     #about-container {
         flex-direction: column;
     }
@@ -317,10 +519,10 @@ nav a:hover {
     
     #about1-box, #about2-box {
         width: 50%;
-        height: 14rem;
+        height: 15rem;
         margin: 1rem;
     }
-    
+
     #pic-box img {
         margin-right: 0;
         height: 18rem;
@@ -384,8 +586,9 @@ nav a:hover {
 }
 
 #skills-container {
-    padding-bottom: 3rem;
+    padding: 1rem 1rem 3rem;
     background-color: white;
+    width: 85%;
 }
 
 #logo-box {
@@ -400,10 +603,9 @@ nav a:hover {
     padding: 1rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 800px) {
     #skills-container {
         padding-bottom: 1rem;
-        width: 85%;
     }
     
     #logo-box {
@@ -622,7 +824,17 @@ form, .contact-message {
     padding-right: 1rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 900px) {
+    #footer {
+        font-size: 1.4rem;
+    }
+    
+    #footer img {
+        height: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     #footer {
         font-size: 1.3rem;
     }
