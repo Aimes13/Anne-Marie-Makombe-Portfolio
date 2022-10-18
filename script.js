@@ -12,15 +12,21 @@ const overlay2Box3 = document.getElementById('secondlayer3');
 
 //.............Project Box1
 
-screenshotBox1.addEventListener('mouseover', () => {
+screenshotBox1.addEventListener('mouseenter', () => {
     //To remove the project title overlay
     overlay1Box1.style.display = 'none';
 
     //To display project information overlay
     overlay2Box1.style.display = 'block';
+    overlay2Box1.style.cursor = 'pointer';
+
+    //To open website link
+    overlay2Box1.addEventListener('click', () => {
+       window.open("https://aimes13.github.io/Flexbox-Business-Site-Project/");
+    });
 });
 
-screenshotBox1.addEventListener('mouseout', () => {
+screenshotBox1.addEventListener('mouseleave', () => {
     //To remove the project title overlay
     overlay1Box1.style.display = 'flex';
 
@@ -28,17 +34,44 @@ screenshotBox1.addEventListener('mouseout', () => {
     overlay2Box1.style.display = 'none';
 });
 
+function mouseOut1() {
+    //To remove the project title overlay
+    overlay1Box1.style.display = 'flex';
+
+    //To display project information overlay
+    overlay2Box1.style.display = 'none';
+};
+
+function click1() {
+    //To remove the project title overlay
+    overlay1Box1.style.display = 'none';
+
+    //To display project information overlay
+    overlay2Box1.style.display = 'block';
+
+    //To open website link
+    overlay2Box1.addEventListener('click', () => {
+       window.open("https://aimes13.github.io/Flexbox-Business-Site-Project/");
+    });
+};
+
 //.............Project Box2
 
-screenshotBox2.addEventListener('mouseover', () => {
+screenshotBox2.addEventListener('mouseenter', () => {
     //To remove the project title overlay
     overlay1Box2.style.display = 'none';
 
     //To display project information overlay
     overlay2Box2.style.display = 'block';
+    overlay2Box2.style.cursor = 'pointer';
+
+    //To open website link
+    overlay2Box2.addEventListener('click', () => {
+       window.open("https://aimes13.github.io/Responsive-Club-Website-Project/");
+    });
 });
 
-screenshotBox2.addEventListener('mouseout', () => {
+screenshotBox2.addEventListener('mouseleave', () => {
     //To remove the project title overlay
     overlay1Box2.style.display = 'flex';
 
@@ -46,20 +79,68 @@ screenshotBox2.addEventListener('mouseout', () => {
     overlay2Box2.style.display = 'none';
 });
 
+function mouseOut2() {
+    //To remove the project title overlay
+    overlay1Box2.style.display = 'flex';
+
+    //To display project information overlay
+    overlay2Box2.style.display = 'none';
+};
+
+function click2() {
+    //To remove the project title overlay
+    overlay1Box2.style.display = 'none';
+
+    //To display project information overlay
+    overlay2Box2.style.display = 'block';
+    
+    //To open website link
+    overlay2Box2.addEventListener('click', () => {
+       window.open("https://aimes13.github.io/Responsive-Club-Website-Project/");
+    });
+};
+
 //.............Project Box3
 
-screenshotBox3.addEventListener('mouseover', () => {
+screenshotBox3.addEventListener('mouseenter', () => {
     //To remove the project title overlay
     overlay1Box3.style.display = 'none';
 
     //To display project information overlay
     overlay2Box3.style.display = 'block';
+    overlay2Box3.style.cursor = 'pointer';
+
+    //To open website link
+    overlay2Box3.addEventListener('click', () => {
+       window.open("https://aimes13.github.io/Mixed-Messages-Portfolio-Project/");
+    });
 });
 
-screenshotBox3.addEventListener('mouseout', () => {
+screenshotBox3.addEventListener('mouseleave', () => {
     //To remove the project title overlay
     overlay1Box3.style.display = 'flex';
 
     //To display project information overlay
     overlay2Box3.style.display = 'none';
 });
+
+function mouseOut3() {
+    //To remove the project title overlay
+    overlay1Box3.style.display = 'flex';
+
+    //To display project information overlay
+    overlay2Box3.style.display = 'none';
+};
+
+function click3() {
+    //To remove the project title overlay
+    overlay1Box3.style.display = 'none';
+
+    //To display project information overlay
+    overlay2Box3.style.display = 'block';
+    
+    //To open website link
+    overlay2Box3.addEventListener('click', () => {
+       window.open("https://aimes13.github.io/Mixed-Messages-Portfolio-Project/");
+    });
+};

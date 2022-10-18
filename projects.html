@@ -9,25 +9,27 @@
         <!--Header Section-->
         <header>
             <div id="header-section" class="center">
-              <div class="content">
-                <div class="logo">Anne-Marie Makombe</div>          
-                <nav class="desktop">
-                  <ul>
-                    <li><a href="./index.html">About</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-                <nav class="mobile">
-                  <ul>
-                    <li><a href="./index.html"><img src="./resources/logos/Picture2-black.jpg"></a></li>
-                    <li><a href="./projects.html"><img src="./resources/images/ic-about-us.svg"></a></li>
-                    <li><a href="./contact.html" class="button">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>
+                <div class="content">
+                    <div class="name">Anne-Marie Makombe</div>          
+                    <nav class="desktop">
+                    <ul>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    </nav>
+                    <div class="companylogo">
+                        <img id="amm" src="./Images/logo.png" alt="">
+                        <img onclick="myFunction()" id="menuButton" class="dropmenu" src="https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" alt="">
+                    </div>
+                    <div id="menu" class="mobile">
+                        <a href="./index.html">Home</a>
+                        <a href="./projects.html">Projects</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
-          </header>
+        </header>
         <!--Projects Section-->
         <div id="projects-section" class="projects content">
             <h2>My Projects</h2>
@@ -40,13 +42,13 @@
                         <div class="pbox">
                             <div id="screenshot1" class="topbox">
                                 <img src="./Images/pellophotography.png" alt="">
-                                <div id="firstlayer1" class="overlay1">
+                                <div onclick="click1()" id="firstlayer1" class="overlay1">
                                     <div class="logo">Pello Photography</div>
                                 </div>
-                                <a id="secondlayer1" class="overlay2" target="_blank" href="https://aimes13.github.io/Flexbox-Business-Site-Project/">
+                                <div onclick="mouseOut1()" id="secondlayer1" class="overlay2">
                                     <h3>Pello Photography</h3>
                                     <p>This project was created to demonstrate a business website built using flexbox and responsive web design.</p>
-                                </a>
+                                </div>
                             </div>
                             <div class="code-box">
                                 <span>Responsive Web Design</span>
@@ -61,13 +63,13 @@
                         <div class="pbox">
                             <div id="screenshot2" class="topbox">
                                 <img src="./Images/drummerclub.png" alt="">
-                                <div id="firstlayer2" class="overlay1">
+                                <div onclick="click2()" id="firstlayer2" class="overlay1">
                                     <div class="logo">The Drummer Club</div>
                                 </div>
-                                <a id="secondlayer2" class="overlay2" target="_blank" href="https://aimes13.github.io/Responsive-Club-Website-Project/">
+                                <div onclick="mouseOut2()" id="secondlayer2" class="overlay2">
                                     <h3>The Drummer Club</h3>
                                     <p>This project was created to demonstrate an official club website built using responsive web design.</p>
-                                </a>
+                                </div>
                             </div>
                             <div class="code-box">
                                 <span>Responsive Web Design</span>
@@ -82,13 +84,13 @@
                         <div class="pbox">
                             <div id="screenshot3" class="topbox">
                                 <img src="./Images/randomsg.png" alt="">
-                                <div id="firstlayer3" class="overlay1">
+                                <div onclick="click3()" id="firstlayer3" class="overlay1">
                                     <div class="logo">Random Quirky Messages</div>
                                 </div>
-                                <a id="secondlayer3" class="overlay2" target="_blank" href="https://aimes13.github.io/Responsive-Club-Website-Project/">
+                                <div onclick="mouseOut3()" id="secondlayer3" class="overlay2">
                                     <h3>Random Quirky Messages</h3>
                                     <p>This project was created to demonstrate a random message generator program, built using JavaScript II, Git & GitHub.</p>
-                                </a>
+                                </div>
                             </div>
                             <div class="code-box">
                                 <span>JavaScript Programming</span>
@@ -119,5 +121,6 @@
         </div>
 
         <script src="./script.js"></script>
+        <script src="./menu.js"></script>
     </body>
 </html>

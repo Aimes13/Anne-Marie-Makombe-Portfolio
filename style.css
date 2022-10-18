@@ -426,6 +426,23 @@ nav a:hover {
     #menuButton {
         height: 3rem;
     }
+
+    .mobile {
+        width: 97%;
+        top: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mobile {
+        width: 96.5%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .mobile {
+        width: 96%;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -435,6 +452,23 @@ nav a:hover {
 
     #menuButton {
         height: 2.5rem;
+    }
+
+    .mobile {
+        top: 5rem;
+        width: 95.5%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .mobile {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .mobile {
+        width: 94.9%;
     }
 }
 
@@ -702,12 +736,9 @@ nav a:hover {
     height: 13rem;
 }
 
-.overlay2 p {
-    font-size: 1.1rem;
-}
-
 .overlay2 {
     background: rgba(102, 51, 153, 0.8);
+    font-size: 1.1rem;
     height: 13rem;
     color: #fff;
     position: absolute;
@@ -743,6 +774,194 @@ nav a:hover {
 
 span {
     font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 2000px) {
+    #projects-box {
+        width: 96%;
+    }
+    
+    .topbox, .topbox img, .overlay2, .overlay1 {
+        height: 23rem;
+    }
+
+    .overlay1 {
+        font-size: 4rem;
+    }
+
+    .overlay2 {
+        font-size: 2.2rem;
+    }
+
+    .code p {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    #projects-box {
+        width: 90%;
+    }
+    
+    .topbox, .topbox img, .overlay2, .overlay1 {
+        height: 20rem;
+    }
+
+    .overlay1 {
+        font-size: 3.3rem;
+    }
+
+    .overlay2 {
+        font-size: 1.9rem;
+    }
+
+    .code p {
+        font-size: 1.8rem;
+    }
+
+    span {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .topbox, .topbox img, .overlay2, .overlay1 {
+        height: 15rem;
+    }
+
+    .overlay1 {
+        font-size: 2.7rem;
+    }
+
+    .overlay2 {
+        font-size: 1.4rem;
+    }
+
+    .code p {
+        font-size: 1.4rem;
+    }
+
+    span {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .topbox, .topbox img, .overlay2, .overlay1 {
+        height: 13rem;
+    }
+
+    .overlay1 {
+        font-size: 2.3rem;
+    }
+
+    .overlay2 {
+        font-size: 1.1rem;
+    }
+
+    .code p {
+        font-size: 1rem;
+    }
+
+    span {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .topbox, .topbox img, .overlay2, .overlay1 {
+        height: 11rem;
+    }
+
+    .overlay1 {
+        font-size: 1.75rem;
+    }
+
+    .overlay2 {
+        font-size: 1rem;
+    }
+
+    .code p {
+        font-size: 1rem;
+    }
+
+    span {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #projectsInfo-box {
+        width: 75%;
+        padding: 0 0.5rem;
+    }
+
+    #projects-box {
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 60%;
+    }
+
+    #project1-box, #project2-box, #project3-box {
+        margin: 1rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .topbox, .topbox img, .overlay2, .overlay1 {
+        height: 10rem;
+    }
+
+    .overlay2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .overlay1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .topbox, .topbox img, .overlay2, .overlay1 {
+        height: 8rem;
+    }
+
+    .overlay2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .overlay1 {
+        font-size: 1.5rem;
+    }
+
+    .code p {
+        font-size: 0.8rem;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .overlay2 {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .topbox, .topbox img, .overlay2, .overlay1 {
+        height: 6.5rem;
+    }
 }
 
 /* Contact Section */
