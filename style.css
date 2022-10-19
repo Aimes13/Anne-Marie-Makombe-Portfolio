@@ -58,6 +58,11 @@ button {
 
 .link-button {
     background-color: lavender;
+    color: rebeccapurple;
+}
+
+.link-button:visited {
+    color: rebeccapurple;
 }
 
 h2 {
@@ -1083,7 +1088,7 @@ form, .contact-message {
 
 @media only screen and (max-width: 660px) {
     #contact-box {
-        width: 80%;
+        width: 90%;
     }
 
     #contacts {
@@ -1108,23 +1113,6 @@ form, .contact-message {
 
     textarea {
         width: 96%;
-    }
-}
-
-
-
-@media only screen and (max-width: 900px) {
-    h2 {
-        font-size: 1.7rem;
-    }
-    
-    .content {
-        font-size: 1.3rem;
-    }
-
-    button {
-        font-size: 1.3rem;
-        height: 2.6rem;
     }
 }
 
