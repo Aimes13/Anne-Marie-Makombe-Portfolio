@@ -12,6 +12,28 @@ const overlay2Box3 = document.getElementById('secondlayer3');
 
 //.............Project Box1
 
+function click1() {
+    //To remove the project title overlay
+    overlay1Box1.style.display = 'none';
+
+    //To display project information overlay
+    overlay2Box1.style.display = 'block';
+};
+
+function mouseOut1() {
+    //To remove the project title overlay
+    overlay1Box1.style.display = 'flex';
+
+    //To display project information overlay
+    overlay2Box1.style.display = 'none';
+};
+
+
+overlay2Box1.addEventListener('click', () => {
+    //To open website link
+    window.open("https://aimes13.github.io/Flexbox-Business-Site-Project/");
+ });
+
 screenshotBox1.addEventListener('mouseenter', () => {
     //To remove the project title overlay
     overlay1Box1.style.display = 'none';
@@ -19,11 +41,6 @@ screenshotBox1.addEventListener('mouseenter', () => {
     //To display project information overlay
     overlay2Box1.style.display = 'block';
     overlay2Box1.style.cursor = 'pointer';
-
-    //To open website link
-    overlay2Box1.addEventListener('click', () => {
-       window.open("https://aimes13.github.io/Flexbox-Business-Site-Project/");
-    });
 });
 
 screenshotBox1.addEventListener('mouseleave', () => {
@@ -34,27 +51,6 @@ screenshotBox1.addEventListener('mouseleave', () => {
     overlay2Box1.style.display = 'none';
 });
 
-function mouseOut1() {
-    //To remove the project title overlay
-    overlay1Box1.style.display = 'flex';
-
-    //To display project information overlay
-    overlay2Box1.style.display = 'none';
-};
-
-function click1() {
-    //To remove the project title overlay
-    overlay1Box1.style.display = 'none';
-
-    //To display project information overlay
-    overlay2Box1.style.display = 'block';
-
-    //To open website link
-    overlay2Box1.addEventListener('click', () => {
-       window.open("https://aimes13.github.io/Flexbox-Business-Site-Project/");
-    });
-};
-
 //.............Project Box2
 
 screenshotBox2.addEventListener('mouseenter', () => {
@@ -64,11 +60,6 @@ screenshotBox2.addEventListener('mouseenter', () => {
     //To display project information overlay
     overlay2Box2.style.display = 'block';
     overlay2Box2.style.cursor = 'pointer';
-
-    //To open website link
-    overlay2Box2.addEventListener('click', () => {
-       window.open("https://aimes13.github.io/Responsive-Club-Website-Project/");
-    });
 });
 
 screenshotBox2.addEventListener('mouseleave', () => {
@@ -93,12 +84,12 @@ function click2() {
 
     //To display project information overlay
     overlay2Box2.style.display = 'block';
-    
-    //To open website link
-    overlay2Box2.addEventListener('click', () => {
-       window.open("https://aimes13.github.io/Responsive-Club-Website-Project/");
-    });
 };
+
+//To open website link
+overlay2Box2.addEventListener('click', () => {
+    window.open("https://aimes13.github.io/Responsive-Club-Website-Project/");
+ });
 
 //.............Project Box3
 
@@ -109,11 +100,6 @@ screenshotBox3.addEventListener('mouseenter', () => {
     //To display project information overlay
     overlay2Box3.style.display = 'block';
     overlay2Box3.style.cursor = 'pointer';
-
-    //To open website link
-    overlay2Box3.addEventListener('click', () => {
-       window.open("https://aimes13.github.io/Mixed-Messages-Portfolio-Project/");
-    });
 });
 
 screenshotBox3.addEventListener('mouseleave', () => {
@@ -138,9 +124,9 @@ function click3() {
 
     //To display project information overlay
     overlay2Box3.style.display = 'block';
-    
-    //To open website link
-    overlay2Box3.addEventListener('click', () => {
-       window.open("https://aimes13.github.io/Mixed-Messages-Portfolio-Project/");
-    });
 };
+
+//To open website link
+overlay2Box3.addEventListener('click', () => {
+    window.open("https://aimes13.github.io/Mixed-Messages-Portfolio-Project/");
+ });
