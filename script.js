@@ -34,7 +34,7 @@ overlay2Box1.addEventListener('click', () => {
     window.open("https://aimes13.github.io/Flexbox-Business-Site-Project/");
  });
 
-screenshotBox1.addEventListener('mouseenter', () => {
+/*screenshotBox1.addEventListener('mouseenter', () => {
     //To remove the project title overlay
     overlay1Box1.style.display = 'none';
 
@@ -49,11 +49,11 @@ screenshotBox1.addEventListener('mouseleave', () => {
 
     //To display project information overlay
     overlay2Box1.style.display = 'none';
-});
+}); */
 
 //.............Project Box2
 
-screenshotBox2.addEventListener('mouseenter', () => {
+/*screenshotBox2.addEventListener('mouseenter', () => {
     //To remove the project title overlay
     overlay1Box2.style.display = 'none';
 
@@ -68,7 +68,7 @@ screenshotBox2.addEventListener('mouseleave', () => {
 
     //To display project information overlay
     overlay2Box2.style.display = 'none';
-});
+}); */
 
 function mouseOut2() {
     //To remove the project title overlay
@@ -93,7 +93,7 @@ overlay2Box2.addEventListener('click', () => {
 
 //.............Project Box3
 
-screenshotBox3.addEventListener('mouseenter', () => {
+/*screenshotBox3.addEventListener('mouseenter', () => {
     //To remove the project title overlay
     overlay1Box3.style.display = 'none';
 
@@ -108,7 +108,7 @@ screenshotBox3.addEventListener('mouseleave', () => {
 
     //To display project information overlay
     overlay2Box3.style.display = 'none';
-});
+}); */
 
 function mouseOut3() {
     //To remove the project title overlay

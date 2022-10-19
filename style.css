@@ -728,6 +728,7 @@ nav a:hover {
 #project1-box, #project2-box, #project3-box {
     margin: 1rem;
     width: 33%;
+    cursor: pointer;
 }
 
 .topbox {
