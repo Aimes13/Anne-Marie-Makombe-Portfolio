@@ -43,7 +43,7 @@ html {
     background-image: url(https://img.freepik.com/free-photo/crumpled-white-paper_1194-7543.jpg?w=2000);
 }
 
-button {
+button, .link-button, .link-button:visited {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ button {
     background-color: rebeccapurple;
     padding: 1rem;
     margin: 1rem 0;
-    font-family: 'Roboto Mono';
+    font-family: "Gentium Plus", sans-serif;
     color: white;
     box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
 }
@@ -61,7 +61,6 @@ button {
 .link-button, .link-button:visited {
     background-color: #abb1cf;
     color: rebeccapurple;
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
 }
 
 h2 {
@@ -69,7 +68,7 @@ h2 {
     color: whitesmoke;
     font-size: 2rem;
     letter-spacing: 0.5rem;
-    width: 90%;
+    width: 30%;
     padding: 1rem 0;
     box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
     text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
@@ -505,7 +504,6 @@ nav a:hover {
     padding: 0.5rem;
     margin: 2rem auto;
     max-width: 80%;
-    background-color: #d5cbe3;
     box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
 }
 
@@ -634,7 +632,6 @@ nav a:hover {
 
 #skills-container {
     padding: 1rem 1rem 3rem;
-    background-color: #d5cbe3;
     box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
     width: 85%;
 }
@@ -723,9 +720,7 @@ nav a:hover {
 }
 
 #projectsInfo-box {
-    background-color: #d5cbe3;
-    box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
-    width: 50%;
+    width: 100%;
 }
 
 #projects-box {
@@ -1046,8 +1041,6 @@ span {
 }
 
 #contactInfo-box {
-    background-color: #d5cbe3;
-    box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
     width: 85%;
     padding: 0 0.5rem;
 }
@@ -1057,7 +1050,7 @@ span {
 }
 
 #contact-box {
-    background-color: #9f45b0;
+    background-color: #d5cbe3;
     box-shadow: -4px 4px 5px 0px rgba(0,0,0,1);
     margin-top: 1rem;
     width: 87%;
