@@ -398,7 +398,7 @@ nav a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgba(67,78,94, 1);;
+        background-color: rgba(103,56,136, 0.95);
         overflow: auto;
         z-index: 1;
         width: 97.5%;
