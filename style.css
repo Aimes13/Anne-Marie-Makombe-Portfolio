@@ -9,23 +9,6 @@
 }
 
 @font-face {
-    font-family: 'Roboto Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/robotomono/v21/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/merriweather/v30/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
     font-family: 'Special Elite';
     font-style: normal;
     font-weight: 400;
@@ -36,14 +19,20 @@
 
 /* Universal Styles */
 html {
-    font-family: "Gentium Plus", sans-serif;
+    font-family: "Special Elite", sans-serif;
     font-size: 16px;
     text-align: center;
-    background-color: #f3f3f3;
-    background-image: url(https://img.freepik.com/free-photo/crumpled-white-paper_1194-7543.jpg?w=2000);
+    background-color: black;
 }
 
-button, .link-button, .link-button:visited {
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(https://www.teahub.io/photos/full/305-3057418_magenta-background-purple-gradient-background-hd.jpg);
+}
+
+button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,93 +47,24 @@ button, .link-button, .link-button:visited {
     box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
 }
 
-.link-button, .link-button:visited {
-    background-color: #abb1cf;
-    color: rebeccapurple;
-}
-
 h2 {
-    background-color: rebeccapurple;
     color: whitesmoke;
-    font-size: 2rem;
     letter-spacing: 0.5rem;
     width: 30%;
     padding: 1rem 0;
-    box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
     text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
 h3 {
-    font-size: larger;
     text-shadow: -1px 1px 2px rgba(0,0,0,0.2);
-}
-
-.content {
-    font-size: 1.3rem;
 }
 
 a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 2000px) {
-    h2 {
-        font-size: 3rem;
-    }
-
-    .content {
-        font-size: 2.3rem;
-    }
-
-    button {
-        font-size: 2.3rem;
-        height: 4.5rem;
-    }
-}
-
-@media only screen and (max-width: 1600px) {
-    h2 {
-        font-size: 2.7rem;
-    }
-
-    .content {
-        font-size: 2rem;
-    }
-
-    button {
-        font-size: 2rem;
-        height: 4rem;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    h2 {
-        font-size: 2rem;
-    }
-
-    .content {
-        font-size: 1.6rem;
-    }
-
-    button {
-        font-size: 1.6rem;
-        height: 3.2rem;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .content {
-        font-size: 1.5rem;
-    }
-
-    button {
-        font-size: 1.5rem;
-        height: 3rem;
-    }
+a:visited {
+    color: white;
 }
 
 @media only screen and (max-width: 900px) {
@@ -203,104 +123,42 @@ a {
 }
 
 /* Header */
-header {
-    width: 100%;
-}
-  
-header .content {
+#header-section, nav .desktop {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+    height: 43.5rem;
     background-color: black;
 }
-  
-header .name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    height: 8rem;
-    width: auto;
-    color: whitesmoke;
-    font-size: 5rem;
-    font-family: "Merriweather";
+
+#header-section .content {
+    padding: 0 1rem;
 }
-  
-header nav ul {
-    display: flex;
-    margin: 0 0.5rem;
+
+#header-section nav .desktop {
+    flex-direction: column;
+    justify-content: space-around;
+    height: fit-content;
 }
-  
-nav li {
-    padding-left: 3rem;
-    display: inline-block;
+
+nav p {
+    margin: 5rem 0;
 }
 
 nav a {
     vertical-align: bottom;
     line-height: 1.6;
-    font-size: 1.8rem;
     color: lavender;
 }
 
 nav a:hover {
     color: khaki;
-    font-size: 2.2rem;
 }
 
 .mobile, .companylogo {
     display: none;
 }
 
-@media only screen and (max-width: 2000px) {
-    nav a {
-        line-height: 2.6;
-        font-size: 2.8rem;
-    }
-    
-    nav a:hover {
-        font-size: 3.2rem;
-    }    
-}
-
-@media only screen and (max-width: 1600px) {
-    header .name {
-        height: 7rem;
-        font-size: 4rem;
-    }
-
-    nav a {
-        line-height: 2.3;
-        font-size: 2.5rem;
-    }
-    
-    nav a:hover {
-        font-size: 2.9rem;
-    }    
-}
-
-@media only screen and (max-width: 1400px) {
-    header .name {
-        height: 6rem;
-        font-size: 3rem;
-    }
-
-    nav a {
-        line-height: 1.6;
-        font-size: 1.8rem;
-    }
-    
-    nav a:hover {
-        font-size: 2.2rem;
-    }
-}
-
 @media only screen and (max-width: 1100px) {
-    header .name {
-        height: 5.4rem;
-        font-size: 2.7rem;
-    }
-
     nav a {
         line-height: 1.4;
         font-size: 1.6rem;
@@ -311,19 +169,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    header .name {
-        height: 4.8rem;
-        font-size: 2.4rem;
-    }
-}
-
 @media only screen and (max-width: 900px) {
-    header .name {
-        height: 3.6rem;
-        font-size: 1.9rem;
-    }
-
     nav a {
         line-height: 1.6;
         font-size: 1.4rem;
@@ -335,11 +181,6 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-    header .name {
-        height: 3.4rem;
-        font-size: 1.7rem;
-    }
-
     nav a {
         line-height: 1.4;
         font-size: 1.2rem;
@@ -351,15 +192,6 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-    header .name {
-        height: 3rem;
-        font-size: 1.9rem;
-    }
-      
-    nav li {
-        padding-left: 1rem;
-    }
-    
     nav a {
         font-size: 1.4rem;
     }
@@ -370,14 +202,10 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 740px) {
-    header .name, .desktop {
+    .desktop {
         display: none;
     }
     
-    header .content {
-        flex-direction: column;
-    }
-
     .companylogo {
         display: flex;
         justify-content: space-between;
@@ -482,6 +310,53 @@ nav a:hover {
     }
 }
 
+/* Home Section */
+#home-section, #home-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+}
+
+#home-box {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    color: whitesmoke;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
+}
+
+#home1 {
+    text-align: left;
+}
+
+#home1 span {
+    color: yellow;
+    font-size: 2.5rem;
+}
+
+#home2, #home3 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+#home3 {
+    font-size: 0.2rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+
+#pic-box img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0px 3px 4px 1px rgba(31,5,47,1); 
+}
+
+
 /* About Section */
 #about-section, #about-container, #about-boxes {
     display: flex;
@@ -505,36 +380,6 @@ nav a:hover {
     margin: 2rem auto;
     max-width: 80%;
     box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
-}
-
-#pic-box img {
-    height: 29rem;
-    width: 29rem;
-    border-radius: 50%;
-    border: 2px solid black;
-    margin-right: 5rem;
-    box-shadow: 0px 3px 4px 1px rgba(31,5,47,1); 
-}
-
-@media only screen and (max-width: 2000px) {
-    #pic-box img {
-        height: 40rem;
-        width: 40rem;
-    }    
-}
-
-@media only screen and (max-width: 1600px) {
-    #pic-box img {
-        height: 35rem;
-        width: 35rem;
-    }    
-}
-
-@media only screen and (max-width: 1400px) {
-    #pic-box img {
-        height: 30rem;
-        width: 30rem;
-    }    
 }
 
 @media only screen and (max-width: 1100px) {
