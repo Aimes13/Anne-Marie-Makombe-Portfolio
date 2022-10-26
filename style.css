@@ -22,6 +22,7 @@ html {
     font-family: "Special Elite", sans-serif;
     font-size: 16px;
     text-align: center;
+    color: white;
     background-color: black;
 }
 
@@ -48,10 +49,7 @@ button {
 }
 
 h2 {
-    color: whitesmoke;
-    letter-spacing: 0.5rem;
-    width: 30%;
-    padding: 1rem 0;
+    font-size: 2rem;
     text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
@@ -357,29 +355,35 @@ nav a:hover {
 }
 
 
-/* About Section */
-#about-section, #about-container, #about-boxes {
+/* About & Skills Section */
+#about-container, #skills-section, #logo-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-    
-#about-container {
-    flex-direction: row;
-    width: 85%;
-    padding: 0.5rem;
 }
 
-#about-boxes {
+#about-box {
     width: 40%;
+    font-size: larger;
+    line-height: 1.8rem;
+    padding-left: 1rem;
 }
 
-#about1-box, #about2-box {
-    padding: 0.5rem;
-    margin: 2rem auto;
-    max-width: 80%;
-    box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
+#skills-section {
+    margin-left: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-box {
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 20%;
+    border: 1px solid red;
+}
+
+#logo-box img {
+    max-height: 3.5rem;
+    padding: 1rem;
+    filter: hue-rotate(180deg) invert(100%) drop-shadow(-6px 6px 0px #000000);
 }
 
 @media only screen and (max-width: 1100px) {
@@ -401,13 +405,7 @@ nav a:hover {
         flex-direction: column;
     }
 
-    #about-boxes {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    #about1-box, #about2-box {
+    #about1-box {
         width: 50%;
         height: 15rem;
         margin: 1rem;
@@ -421,23 +419,19 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 700px) {
-    #about1-box, #about2-box {
+    #about1-box {
         height: 16rem;
     }
 }
 
 @media only screen and (max-width: 620px) {
-    #about1-box, #about2-box {
+    #about1-box {
         height: 19rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #about-boxes {
-        flex-direction: column;
-    }
-    
-    #about1-box, #about2-box {
+    #about1-box {
         width: 90%;
         height: auto;
     }
@@ -468,31 +462,6 @@ nav a:hover {
 }
 
 /* Skills Section */
-#skills-section, #skills-container, #logo-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#skills-container {
-    padding: 1rem 1rem 3rem;
-    box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
-    width: 85%;
-}
-
-#logo-box {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-}
-
-#logo-box img {
-    max-height: 8rem;
-    max-width: 10rem;
-    padding: 1rem;
-}
-
 @media only screen and (max-width: 800px) {
     #skills-container {
         padding-bottom: 1rem;

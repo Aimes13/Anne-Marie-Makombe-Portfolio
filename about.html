@@ -10,30 +10,26 @@
     </head>
     <body>
         <!--Header Section-->
-        <header>
-            <div id="header-section" class="center">
-                <div class="content">
-                    <nav class="desktop">
-                        <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./projects.html">Projects</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <div class="companylogo">
-                        <img id="amm" src="./Images/logo.png" alt="">
-                        <img onclick="myFunction()" id="menuButton" class="dropmenu" src="https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" alt="">
-                    </div>
-                    <div id="menu" class="mobile">
-                        <a href="./index.html">Home</a>
-                        <a href="./about.html">About</a>
-                        <a href="./projects.html">Projects</a>
-                        <a href="./contact.html">Contact</a>
-                    </div>
+        <div id="header-section" class="center">
+            <div class="content">
+                <nav class="desktop">
+                    <p><a href="./index.html">Home</a></p>
+                    <p><a href="./about.html">About</a></p>
+                    <p><a href="./projects.html">Projects</a></p>
+                    <p><a href="./contact.html">Contact</a></p>
+                </nav>
+                <div class="companylogo">
+                    <img id="amm" src="./Images/logo.png" alt="">
+                    <img onclick="myFunction()" id="menuButton" class="dropmenu" src="https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" alt="">
+                </div>
+                <div id="menu" class="mobile">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./contact.html">Contact</a>
                 </div>
             </div>
-        </header>
+        </div>
         <!-- About Section-->
         <div id="about-container">
             <div id="about-box">
@@ -47,18 +43,20 @@
                 <h2>My Skills</h2>
                 <div id="skills-container">
                     <div id="logo-box">
-                        <img src="https://www.pngitem.com/pimgs/m/493-4938088_html-css-javascript-icons-hd-png-download.png" alt="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png" alt="">
-                        <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_720/https://ubuntu.com/wp-content/uploads/c9f4/visualstudio_code-card.png" alt="">
-                        <img src="https://miro.medium.com/max/1400/1*jxvFpD7E00qsfY7PQzd5aA.png" alt="">
-                        <img src="data:image/png;base64,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" alt="">
-                        <img src="https://www.kindpng.com/picc/m/21-215460_microsoft-sql-server-logo-png-microsoft-sql-server.png" alt="">
+                        <img src="https://img.icons8.com/ios/2x/html-5.png" alt="">
+                        <img src="https://img.icons8.com/ios/2x/css3.png" alt="">
+                        <img src="https://img.icons8.com/ios/2x/javascript-logo.png" alt="">
+                        <img src="https://brandslogos.com/wp-content/uploads/images/large/nodejs-logo-black-and-white.png" alt="">
+                        <img src="https://img.icons8.com/ios/2x/visual-studio.png" alt="">
+                        <img src="https://img.icons8.com/ios/2x/git.png" alt="">
+                        <img src="https://img.icons8.com/ios/2x/github.png" alt="">
+                        <img src="https://img.icons8.com/ios/2x/mysql-logo.png" alt="">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/SAS_logo_horiz.svg/2560px-SAS_logo_horiz.svg.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <!--Footer Section-->
+        <!--Footer Section-
         <div id="footer" class="footer content">
             <div id="copyright">
                 <p>2022 &copy Anne-Marie Makombe</p>
@@ -71,6 +69,7 @@
                 <a href="#"><img src="https://ps.w.org/wpfront-scroll-top/assets/icon-256x256.png?rev=1534312" alt=""></a>
             </div>
         </div>
+    -->
 
         <script src="./menu.js"></script>
     </body>
