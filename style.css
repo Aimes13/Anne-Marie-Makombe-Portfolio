@@ -23,6 +23,7 @@ html {
     font-size: 16px;
     text-align: center;
     color: white;
+    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
     background-color: black;
 }
 
@@ -50,11 +51,12 @@ button {
 
 h2 {
     font-size: 2rem;
-    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
+    text-shadow: -6px 6px 3px rgba(0,0,0,0.6);
 }
 
 h3 {
-    text-shadow: -1px 1px 2px rgba(0,0,0,0.2);
+    font-size: 1.5rem;
+    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
 a {
@@ -335,7 +337,7 @@ nav a:hover {
     color: whitesmoke;
     font-size: 2rem;
     letter-spacing: 0.3rem;
-    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
+    text-shadow: -6px 6px 4px rgba(0,0,0,0.6);
 }
 
 #home1 {
@@ -353,7 +355,7 @@ nav a:hover {
 }
 
 #home3 {
-    font-size: 0.2rem;
+    font-size: 1.2rem;
     border: 1px solid white;
     padding: 0.5rem;
 }
@@ -363,7 +365,7 @@ nav a:hover {
     width: 20rem;
     border-radius: 50%;
     border: 2px solid black;
-    box-shadow: 0px 3px 4px 1px rgba(31,5,47,1); 
+    box-shadow: 6px 6px 6px 1px rgba(31,5,47,1); 
 }
 
 
@@ -537,15 +539,11 @@ nav a:hover {
 }
 
 /* Projects Section */
-#projects-section, #projects-container, #projects-box, .pbox, .code-box, .code, .topbox, .overlay1 {
+#projects-section, #projects-container, #projects-box, .pbox, .code-box, .code, .topbox, .overlay1, .overlay2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-#projectsInfo-box {
-    width: 100%;
 }
 
 #projects-box {
@@ -559,7 +557,7 @@ nav a:hover {
     margin: 1rem;
     width: 33%;
     cursor: pointer;
-    box-shadow: -4px 4px 5px 0px rgba(0,0,0,1);
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,1);
 }
 
 .topbox {
@@ -576,12 +574,17 @@ nav a:hover {
 
 .overlay2 {
     background: rgba(102, 51, 153, 0.8);
-    font-size: 1.1rem;
     height: 13rem;
+    width: 100%;
     color: #fff;
     position: absolute;
-    padding: 0 0.3rem;
+    padding: 0.3rem;
     display: none;
+}
+
+.overlay2 p {
+    font-size: 1.2rem;
+    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
 .overlay1 {
@@ -591,11 +594,12 @@ nav a:hover {
     background: rgba(67,78,94, 0.75);
     font-size: 2rem;
     color: white;
+    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
 .code-box {
     background-color: white;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
     width: 100%;
 }
 
@@ -604,115 +608,17 @@ nav a:hover {
 }
 
 .code p {
-    background-color: lavender;
+    background-color: rebeccapurple;
     border-radius: 5px;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     margin: 0.5rem;
-    font-size: 1rem;
+    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
-span {
-    font-size: 1.2rem;
-}
-
-@media only screen and (max-width: 2000px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 23rem;
-    }
-
-    .overlay1 {
-        font-size: 4rem;
-    }
-
-    .overlay2 {
-        font-size: 2.2rem;
-    }
-
-    .code p {
-        font-size: 2rem;
-    }
-
-    span {
-        font-size: 2.4rem;
-    }
-}
-
-@media only screen and (max-width: 1800px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 20rem;
-    }
-
-    .overlay1 {
-        font-size: 3.3rem;
-    }
-
-    .overlay2 {
-        font-size: 1.9rem;
-    }
-
-    .code p {
-        font-size: 1.8rem;
-    }
-
-    span {
-        font-size: 2.2rem;
-    }
-}
-
-@media only screen and (max-width: 1600px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 17rem;
-    }
-}
-
-@media only screen and (max-width: 1560px) {
-    .overlay2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 14rem;
-    }
-
-    .overlay1 {
-        font-size: 2.7rem;
-    }
-
-    .overlay2 {
-        font-size: 1.4rem;
-    }
-
-    .code p {
-        font-size: 1.4rem;
-    }
-
-    span {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 12rem;
-    }
-
-    .overlay1 {
-        font-size: 2.3rem;
-    }
-
-    .overlay2 {
-        font-size: 1.1rem;
-    }
-
-    .code p {
-        font-size: 1rem;
-    }
-
-    span {
-        font-size: 1.4rem;
-    }
+.code-box span {
+    color: black;
+    font-size: larger;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.6);
 }
 
 @media only screen and (max-width: 1000px) {
