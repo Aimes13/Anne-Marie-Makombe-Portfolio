@@ -138,14 +138,26 @@ a:visited {
     height: fit-content;
 }
 
-nav p {
-    margin: 5rem 0;
-}
-
 nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     vertical-align: bottom;
     line-height: 1.6;
     color: lavender;
+    margin: 4rem 0;
+}
+
+nav img {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 0.2rem;
+    filter: invert(100%);
+}
+
+nav img:hover {
+    filter: invert(0%);
+    background-color: khaki;
 }
 
 nav a:hover {
@@ -377,7 +389,6 @@ nav a:hover {
     flex-wrap: wrap;
     width: 60%;
     margin-left: 20%;
-    border: 1px solid red;
 }
 
 #logo-box img {
