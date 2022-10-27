@@ -29,7 +29,6 @@ html {
 
 body {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-image: url(https://www.teahub.io/photos/full/305-3057418_magenta-background-purple-gradient-background-hd.jpg);
 }
@@ -66,58 +65,22 @@ a:visited {
 }
 
 @media only screen and (max-width: 900px) {
-    h2 {
-        font-size: 1.7rem;
     }
-    
-    .content {
-        font-size: 1.3rem;
-    }
-
-    button {
-        font-size: 1.3rem;
-        height: 2.6rem;
-    }
-}
 
 @media only screen and (max-width: 800px) {
-    h2 {
-        font-size: 1.7rem;
-        padding: 0.5rem 0;
-    }
     
-    .content {
-        font-size: 1.2rem;
-    }
-    
-    button {
-        font-size: 1.2rem;
-        height: 2.5rem;
-    }
 }
 
 @media only screen and (max-width: 700px) {
-    h2 {
-        width: 95%;
-    }
+    
 }
 
 @media only screen and (max-width: 340px) {
-    .content {
-        font-size: 1.1rem;
-    }
-
-    button {
-        font-size: 1.1rem;
-        height: 2.3rem;
-    }
+    
 }
 
 @media only screen and (max-width: 300px) {
-    h2 {
-        font-size: 1.5rem;
-        letter-spacing: 0.3rem;
-    }
+    
 }
 
 /* Header */
@@ -129,12 +92,11 @@ a:visited {
 }
 
 #header-section .content {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 #header-section nav .desktop {
     flex-direction: column;
-    justify-content: space-around;
     height: fit-content;
 }
 
@@ -143,8 +105,8 @@ nav a {
     flex-direction: column;
     align-items: center;
     vertical-align: bottom;
-    line-height: 1.6;
     color: lavender;
+    font-size: 0.6rem;
     margin: 4rem 0;
 }
 
@@ -168,155 +130,28 @@ nav a:hover {
     display: none;
 }
 
+/* Tablet Landscape */
 @media only screen and (max-width: 1100px) {
-    nav a {
-        line-height: 1.4;
-        font-size: 1.6rem;
-    }
-    
-    nav a:hover {
-        font-size: 2rem;
+    #header-section {
+        height: 40.5rem;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    nav a {
-        line-height: 1.6;
-        font-size: 1.4rem;
-    }
-    
-    nav a:hover {
-        font-size: 1.8rem;
+@media only screen and (max-width: 1000px) {
+    #header-section {
+        height: 38.5rem;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    nav a {
-        line-height: 1.4;
-        font-size: 1.2rem;
-    }
-    
-    nav a:hover {
-        font-size: 1.6rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    nav a {
-        font-size: 1.4rem;
-    }
-    
-    nav a:hover {
-        font-size: 1.8rem;
-    }    
-}
-
-@media only screen and (max-width: 740px) {
-    .desktop {
-        display: none;
-    }
-    
-    .companylogo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .companylogo img {
-        max-height: 5rem;
-    }
-
-    #amm {
-        border-radius: 5%;
-    }
-    
-    #menuButton {
-        height: 4rem;
-        cursor: pointer;
-    }
-
-    #menuButton:focus {
-        border: 2px solid white;
-    }
-
-    .mobile {
-        position: absolute;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(103,56,136, 0.95);
-        overflow: auto;
-        z-index: 1;
-        width: 97.5%;
-        top: 6.4rem;
-    }
-
-    .mobile a {
-        color: white;
-        font-size: 1.6rem;
-        letter-spacing: 0.3rem;
-        width: 100%;
-        padding: 0.5rem;
-        border-bottom: 1px solid whitesmoke;
-    }
-
-    .show {
-        display: flex;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    .companylogo img {
-        max-height: 4rem;
-    }
-
-    #menuButton {
-        height: 3rem;
-    }
-
-    .mobile {
-        width: 97%;
-        top: 5.5rem;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .mobile {
-        width: 96.5%;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    .mobile {
-        width: 96%;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .companylogo img {
-        max-height: 3.5rem;
-    }
-
-    #menuButton {
-        height: 2.5rem;
-    }
-
-    .mobile {
-        top: 5rem;
-        width: 95.5%;
-    }
-}
-
-@media only screen and (max-width: 340px) {
-    .mobile {
-        width: 95%;
+@media only screen and (max-width: 700px) {
+    #header-section {
+        height:50.5rem;
     }
 }
 
 @media only screen and (max-width: 300px) {
-    .mobile {
-        width: 94.9%;
+    #header-section {
+        height:58.5rem;
     }
 }
 
@@ -326,7 +161,9 @@ nav a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    width: 80%;
+    margin-left: 2rem;
+    padding: 1rem;
 }
 
 #home-container, #skills-section, #logo-box {
@@ -339,6 +176,8 @@ nav a:hover {
 }
 
 #home-box {
+    padding: 0;
+    margin: 0;
     width: 60%;
     align-items: flex-start;
     color: whitesmoke;
@@ -368,8 +207,8 @@ nav a:hover {
 }
 
 #pic-box img {
-    height: 20rem;
-    width: 20rem;
+    height: 18rem;
+    width: 18rem;
     border-radius: 50%;
     border: 2px solid black;
     box-shadow: 6px 6px 6px 1px rgba(31,5,47,1); 
@@ -393,6 +232,67 @@ nav a:hover {
     filter: hue-rotate(180deg) invert(100%) drop-shadow(-6px 6px 0px #000000);
 }
 
+/* Tablet Landscape */
+@media only screen and (max-width: 1100px) {
+    #home-section {
+        width: 100%;
+        margin-left: 0.5rem;
+    }
+
+    #pic-box img {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    #skills-section {
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #home-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #logo-box img {
+        max-height: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #home-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #pic-box img {
+        height: 8rem;
+        width: 8rem;
+        margin: 1rem;
+    }
+
+    #skills-section {
+        margin-top: 0;
+    }
+
+    #logo-box img {
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #home2 p {
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    #home2 p {
+        font-size: 0.7rem;
+    }
+}
 
 /* About Section */
 #about-container {
@@ -413,142 +313,51 @@ nav a:hover {
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,1);
 }
 
-@media only screen and (max-width: 1100px) {
-    #pic-box img {
-        height: 25rem;
-        width: 25rem;
-    }    
-}
-
-@media only screen and (max-width: 900px) {
-    #pic-box img {
-        height: 20rem;
-        width: 20rem;
-    }    
-}
-
-@media only screen and (max-width: 800px) {
-    #about-container {
-        flex-direction: column;
-    }
-
-    #about1-box {
-        width: 50%;
-        height: 15rem;
-        margin: 1rem;
-    }
-
-    #pic-box img {
-        margin-right: 0;
-        height: 18rem;
-        width: 18rem;
-    }
+@media only screen and (max-width: 1000px) {
+    #logoPic img {
+        height: 7rem;
+    }        
 }
 
 @media only screen and (max-width: 700px) {
-    #about1-box {
-        height: 16rem;
+    #about-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
-}
-
-@media only screen and (max-width: 620px) {
-    #about1-box {
-        height: 19rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #about1-box {
-        width: 90%;
-        height: auto;
+    
+    #about-box {
+        width: 80%;
+        text-align: left;
     }
 
-    #pic-box img {
-        height: 15rem;
-        width: 15rem;
+    #logoPic img {
+        height: 6rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    #about-container {
+    #about-box {
         width: 90%;
-    }
+    }   
 }
 
 @media only screen and (max-width: 400px) {
-    #pic-box img {
-        height: 11rem;
-        width: 11rem;
+    #logoPic img {
+        height: 5rem;
     }
 }
 
-@media only screen and (max-width: 360px) {
-    #about-container {
-        width: 100%;
-    }
-}
-
-/* Skills Section */
-@media only screen and (max-width: 800px) {
-    #skills-container {
-        padding-bottom: 1rem;
-    }
-    
-    #logo-box {
-        padding-top: 1rem;
-    }
-    
-    #logo-box img {
-        max-height: 7rem;
-        max-width: 9rem;
-    }    
-}
-
-@media only screen and (max-width: 600px) {
-    #skills-container {
-        padding: 0 1rem;
-    }
-    
-    #logo-box {
-        padding-top: 0;
+@media only screen and (max-width: 320px) {
+    #about-box {
+        width: 85%;
+        padding-right: 0.5rem;
     }
 
-    #logo-box img {
-        max-height: 6rem;
-        max-width: 8rem;
-        padding: 0.5rem;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    #skills-container {
-        padding: 0 0.5rem;
-    }
-    
-    #logo-box img {
-        max-height: 5rem;
-        max-width: 7rem;
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    #logo-box img {
-        max-height: 4rem;
-        max-width: 6rem;
-    }
-}
-
-@media only screen and (max-width: 460px) {
-    #logo-box img {
-        max-height: 3rem;
-        max-width: 5rem;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    #logo-box img {
-        max-height: 2.9rem;
-        max-width: 4.9rem;
+    #logoPic img {
+        height: 4rem;
+        margin-top: 0.5rem;
     }
 }
 
@@ -560,16 +369,20 @@ nav a:hover {
     flex-direction: column;
 }
 
+#projects-section {
+    width: 100%;
+}
+
 #projects-box {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 1.5rem;
-    width: 96%;
+    width: 99%;
 }
 
 #project1-box, #project2-box, #project3-box {
     margin: 1rem;
-    width: 33%;
+    width: 30%;
     cursor: pointer;
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,1);
 }
@@ -592,7 +405,7 @@ nav a:hover {
     width: 100%;
     color: #fff;
     position: absolute;
-    padding: 0.3rem;
+    padding: 0 0.5rem;
     display: none;
 }
 
@@ -605,6 +418,7 @@ nav a:hover {
     position: absolute;
     width: 100%;
     height: 13rem;
+    padding: 0 0.5rem;
     background: rgba(67,78,94, 0.75);
     font-size: 2rem;
     color: white;
@@ -636,145 +450,70 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 10rem;
-    }
-
-    .overlay1 {
-        font-size: 1.75rem;
-    }
-
-    .overlay2 {
-        font-size: 1rem;
-    }
-
-    .code-box {
-        padding-bottom: 0.2rem;
-    }
-
-    .code p {
-        font-size: 1rem;
-    }
-
-    span {
-        font-size: 1.2rem;
+    .topbox, .topbox img, .overlay1, .overlay2 {
+        height: 11rem;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    #projectsInfo-box {
-        width: 75%;
-        padding: 0 0.5rem;
+@media only screen and (max-width: 900px) {
+    .code p {
+        font-size: smaller;
+        margin: 0 0.5rem;
     }
 
+    .code-box span {
+        font-size: smaller;
+        margin-bottom: 0.3rem;
+        text-shadow: -1px 1px 2px rgba(0,0,0,0.6);
+    }
+
+}
+
+@media only screen and (max-width: 880px) {
     #projects-box {
-        flex-direction: column;
-        margin-top: 1rem;
-        width: 60%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 0;
     }
 
     #project1-box, #project2-box, #project3-box {
-        margin: 1rem;
-        width: 100%;
+        width: 45%;
+        margin: 0.5rem;
     }
 
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 15rem;
+    .topbox, .topbox img, .overlay1, .overlay2 {
+        height: 9rem;
     }
+
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     #projects-box {
-        width: 70%;
+        flex-direction: column;
     }
 
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 13rem;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #projectsInfo-box, #projects-box {
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    #projectsInfo-box, #projects-box {
-        width: 88%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #projects-box {
+    #project1-box, #project2-box, #project3-box {
         width: 90%;
-    }
-
-    .code-box {
-        padding-bottom: 0.1rem;
-    }
-
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 11rem;
-    }
-
-    .overlay2 {
-        font-size: 0.9rem;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .overlay1 {
-        font-size: 1.7rem;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 10rem;
-    }
-
-    .overlay2 {
-        font-size: 0.8rem;
-    }
-}
-
-@media only screen and (max-width: 340px) {
-    .overlay1 {
-        font-size: 1.5rem;
-    }
-
-    .code p {
-        font-size: 0.8rem;
-    }
-
-    span {
-        font-size: 1rem;
+        margin: 1rem;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 9rem;
+    #project1-box, #project2-box, #project3-box {
+        width: 88%;
     }
 
-    .overlay2 {
-        font-size: 0.7rem;
+    .code p {
+        margin: 0 0.2rem;
+    }
+
+    .overlay1 {
+        font-size: 1.8rem;
     }
 }
 
 @media only screen and (max-width: 300px) {
-    .overlay2 {
-        font-size: 0.5rem;
-    }
-
-    .code p {
-        font-size: 0.6rem;
-    }
-
-    span {
-        font-size: 0.8rem;
-    }
 }
 
 /* Contact Section */
@@ -786,10 +525,12 @@ nav a:hover {
 #contact-section {
     width: 90%;
     flex-direction: row;
+    margin-left: 1rem;
 }
 
 #icon img {
     height: 10rem;
+    filter: drop-shadow(-1px 1px 2px #fbf4f4);
 }
 
 #contactInfo-box {
@@ -847,134 +588,65 @@ form, .contact-message {
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-@media only screen and (max-width: 1100px) {
-    .contact-name input, .contact-email input {
-        font-size: 1.2rem;
-        height: 1.9rem;
-    }
-
-    textarea {
-        font-size: 1.2rem;
-    }
-
-    #form-container button {
-        font-size: 1.2rem;
-        height: 2rem;
-    }
+#github {
+    display: none;
 }
 
-@media only screen and (max-width: 660px) {
-    #contact-box {
+@media only screen and (max-width: 700px) {
+    #icon img {
+        display: none;
+    }
+
+    #contactInfo-box h2 {
+        display: flex;
+        align-items: center;
+    }
+
+    #github {
+        display: block;
+    }
+
+    #github img {
+        height: 5rem;
+        margin: 0 2rem;
+        filter: drop-shadow(-1px 1px 2px #fbf4f4);
+    }
+
+    #contactInfo-box, #contact-box {
         width: 90%;
-    }
-
-    #contacts {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .contact-name, .contact-email {
-        width: 80%;
-        padding: 0.5rem ;
-    }
-
-    textarea {
-        width: 76%;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    #contactInfo-box, #contact-box {
+        width: 98%;
+    }
+
+    #contacts {
+        flex-direction: column;
+        padding: 0;
+    }
+    
     .contact-name, .contact-email {
         width: 100%;
-    }
-
-    textarea {
-        width: 96%;
+        padding-bottom: 0.5rem;
     }
 }
 
-/* Footer Section*/
-#footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    background-color: #a7adba;
-    font-family: 'Special Elite';
-}
-
-#icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#icon a, #icon a:visited {
-    color: rebeccapurple;
-}
-  
-#footer img {
-    height: 3rem;
-    padding-right: 1rem;
-}
-
-@media only screen and (max-width: 900px) {
-    #footer {
-        font-size: 1.4rem;
+@media only screen and (max-width: 400px) {
+    #contactInfo-box h2 {
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
     
-    #footer img {
-        height: 2.8rem;
+    #github img {
+        height: 4rem;
+        margin: 1rem;
     }
-}
-
-@media only screen and (max-width: 800px) {
-    #footer {
-        font-size: 1.3rem;
-    }
-    
-    #footer img {
-        height: 2.5rem;
-    }
-}
-
-@media only screen and (max-width: 660px) {
-    #icon p {
-        display: none;
-    }
-
-    #footer img {
-        padding-right: 0;
-    }
-}
-
-@media only screen and (max-width: 580px) {
-    #footer {
-        font-size: 1.1rem;
-    }
-    
-    #footer img {
-        height: 2rem;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    #footer {
-        font-size: 0.9rem;
-    }
-    
-    #footer img {
-        height: 1.8rem;
-    }
-}
+}   
 
 @media only screen and (max-width: 300px) {
-    #footer {
-        font-size: 0.8rem;
-    }
-    
-    #footer img {
-        height: 1.2rem;
+    #contactInfo-box, #contact-box {
+        width: 92%;
     }
 }
