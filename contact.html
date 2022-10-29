@@ -1,83 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Anne-Marie Makombe</title>
+        <title>Anne-Marie Makombe | Portfolio</title>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <!--Header Section-->
-        <header>
-            <div id="header-section" class="center">
-              <div class="content">
-                <div class="name">Anne-Marie Makombe</div>          
-                <nav class="desktop">
-                  <ul>
-                    <li><a href="./index.html">About</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-                <div class="companylogo">
-                  <img id="amm" src="./Images/logo.png" alt="">
-                  <img onclick="myFunction()" id="menuButton" class="dropmenu" src="https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" alt="">
-                </div>
-                <div id="menu" class="mobile">
-                  <a href="./index.html">Home</a>
-                  <a href="./projects.html">Projects</a>
-                  <a href="./contact.html">Contact</a>
-                </div>
-              </div>
-            </div>
-          </header>
-        <!--Contact Section-->
-        <div id="contact-section" class="contact content">
-            <h2>Contact Me</h2>
-              <div id="contact-container">
-                <div id="contactInfo-box">
-                    <p>I am currently taking on freelance work. <br> If you are interested in hiring me for your project please use the form below to get in touch.</p>
-                </div>
-                <div id="contact-box">
-                    <h3>Get In Touch</h3>
-                    <div id="form-box">
-                      <form action="mailto:annemariemakombe@gmail.com" method="POST">
-                        <div id="form-container">
-                          <div id="contacts">
-                            <div class="contact-name">
-                              <label class="sr-only" for="cname"></label>
-                              <input type="text" class="form-control" name="name" id="cname" placeholder="Name" minlength="2" required aria-required="true">
-                            </div>
-                            <div class="contact-email">
-                              <label class="sr-only" for="cemail"></label>
-                              <input type="email" class="form-control" name="email" id="cemail" placeholder="Email" required aria-required="true">
-                            </div>
-                          </div>
-                          <div class="contact-message">
-                            <label class="sr-only" for="cmessage"></label>
-                            <textarea class="form-control" name="message" id="cmessage" placeholder="Enter your message" rows="10" required aria-required="true"></textarea>
-                          </div>
-                          <div>
-                            <button type="submit" class="btn" value="Send">Send</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                </div>
-            </div>
-            <button class="link-button"><a href="./index.html">Go to Home Page</a></button>
-        </div>
-        <!--Footer Section-->
-        <div id="footer" class="footer content">
-          <div id="copyright">
-              <p>2022 &copy Anne-Marie Makombe</p>
+        <div id="header-section" class="center">
+          <div class="content">
+              <nav class="desktop">
+                <a href="./index.html"><img src="https://cdn3.iconfinder.com/data/icons/essential-pack/32/10-House-64.png" alt="">Home</a>
+                <a href="./about.html"><img src="https://cdn0.iconfinder.com/data/icons/superuser-web-kit-thin/512/686941-user_people_man_human_head_person-512.png" alt="">About</a>
+                <a href="./projects.html"><img src="https://cdn3.iconfinder.com/data/icons/education-4-8/48/198-512.png" alt="">Projects</a>
+                <a href="./contact.html"><img src="https://cdn4.iconfinder.com/data/icons/ecommerce-24-1/24/Ecommerce_Outline_Coontact_Us_Message-512.png" alt="">Contact</a>
+              </nav>
           </div>
-          <div id="icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
-              <p><a href="https://github.com/Aimes13" target="_blank">GitHub: Aimes13</a></p>
-            </div>
-          <div class="image-container1">
-                <a href="#"><img src="https://ps.w.org/wpfront-scroll-top/assets/icon-256x256.png?rev=1534312" alt=""></a>
-            </div>
+      </div>
+      <!--Contact Section-->
+      <div id="contact-section" class="contact content">
+        <div id="contact-container">
+          <div id="contactInfo-box">
+            <h2>Contact Me<a id="github" href="https://github.com/Aimes13" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a></h2>  
+            <p>I am currently taking on freelance work. <br> If you are interested in hiring me for your project please use the form below to get in touch.</p>
+          </div>
+          <div id="contact-box">
+              <div id="form-box">
+                <form action="mailto:annemariemakombe@gmail.com" method="POST">
+                  <div id="form-container">
+                    <div id="contacts">
+                      <div class="contact-name">
+                        <label class="sr-only" for="cname"></label>
+                        <input type="text" class="form-control" name="name" id="cname" placeholder="Name" minlength="2" required aria-required="true">
+                      </div>
+                      <div class="contact-email">
+                        <label class="sr-only" for="cemail"></label>
+                        <input type="email" class="form-control" name="email" id="cemail" placeholder="Email" required aria-required="true">
+                      </div>
+                    </div>
+                    <div class="contact-message">
+                      <label class="sr-only" for="cmessage"></label>
+                      <textarea class="form-control" name="message" id="cmessage" placeholder="Enter your message" rows="10" required aria-required="true"></textarea>
+                    </div>
+                    <div>
+                      <button type="submit" class="btn" value="Send">SEND</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+           </div>
+        </div>
+        <div id="icon">
+          <a href="https://github.com/Aimes13" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+        </div>
       </div>
 
       <script src="./menu.js"></script>

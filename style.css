@@ -9,23 +9,6 @@
 }
 
 @font-face {
-    font-family: 'Roboto Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/robotomono/v21/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/merriweather/v30/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
     font-family: 'Special Elite';
     font-style: normal;
     font-weight: 400;
@@ -36,705 +19,444 @@
 
 /* Universal Styles */
 html {
-    font-family: "Gentium Plus", sans-serif;
+    font-family: "Special Elite", sans-serif;
     font-size: 16px;
     text-align: center;
-    background-color: #f3f3f3;
-    background-image: url(https://img.freepik.com/free-photo/crumpled-white-paper_1194-7543.jpg?w=2000);
+    color: white;
+    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
+    background-color: black;
 }
 
-button, .link-button, .link-button:visited {
+body {
+    display: flex;
+    align-items: center;
+    background-image: url(https://www.teahub.io/photos/full/305-3057418_magenta-background-purple-gradient-background-hd.jpg);
+}
+
+button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
-    height: 4rem;
-    border-radius: 4px;
-    background-color: rebeccapurple;
     padding: 1rem;
     margin: 1rem 0;
-    font-family: "Gentium Plus", sans-serif;
     color: white;
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-}
-
-.link-button, .link-button:visited {
-    background-color: #abb1cf;
-    color: rebeccapurple;
+    border: 1px solid white;
+    background-color: transparent;
+    font-family: "Special Elite", sans-serif;
+    cursor: pointer;
 }
 
 h2 {
-    background-color: rebeccapurple;
-    color: whitesmoke;
     font-size: 2rem;
-    letter-spacing: 0.5rem;
-    width: 30%;
-    padding: 1rem 0;
-    box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
-    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
+    text-shadow: -6px 6px 3px rgba(0,0,0,0.6);
 }
 
 h3 {
-    font-size: larger;
-    text-shadow: -1px 1px 2px rgba(0,0,0,0.2);
-}
-
-.content {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 2000px) {
-    h2 {
-        font-size: 3rem;
-    }
-
-    .content {
-        font-size: 2.3rem;
-    }
-
-    button {
-        font-size: 2.3rem;
-        height: 4.5rem;
-    }
-}
-
-@media only screen and (max-width: 1600px) {
-    h2 {
-        font-size: 2.7rem;
-    }
-
-    .content {
-        font-size: 2rem;
-    }
-
-    button {
-        font-size: 2rem;
-        height: 4rem;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    h2 {
-        font-size: 2rem;
-    }
-
-    .content {
-        font-size: 1.6rem;
-    }
-
-    button {
-        font-size: 1.6rem;
-        height: 3.2rem;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .content {
-        font-size: 1.5rem;
-    }
-
-    button {
-        font-size: 1.5rem;
-        height: 3rem;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    h2 {
-        font-size: 1.7rem;
-    }
-    
-    .content {
-        font-size: 1.3rem;
-    }
-
-    button {
-        font-size: 1.3rem;
-        height: 2.6rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    h2 {
-        font-size: 1.7rem;
-        padding: 0.5rem 0;
-    }
-    
-    .content {
-        font-size: 1.2rem;
-    }
-    
-    button {
-        font-size: 1.2rem;
-        height: 2.5rem;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    h2 {
-        width: 95%;
-    }
-}
-
-@media only screen and (max-width: 340px) {
-    .content {
-        font-size: 1.1rem;
-    }
-
-    button {
-        font-size: 1.1rem;
-        height: 2.3rem;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    h2 {
-        font-size: 1.5rem;
-        letter-spacing: 0.3rem;
-    }
+a:visited {
+    color: white;
 }
 
 /* Header */
-header {
-    width: 100%;
-}
-  
-header .content {
+#header-section, nav .desktop {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+    height: 43.5rem;
     background-color: black;
 }
-  
-header .name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    height: 8rem;
-    width: auto;
-    color: whitesmoke;
-    font-size: 5rem;
-    font-family: "Merriweather";
+
+#header-section .content {
+    padding: 0 0.5rem;
 }
-  
-header nav ul {
-    display: flex;
-    margin: 0 0.5rem;
-}
-  
-nav li {
-    padding-left: 3rem;
-    display: inline-block;
+
+#header-section nav .desktop {
+    flex-direction: column;
+    height: fit-content;
 }
 
 nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     vertical-align: bottom;
-    line-height: 1.6;
-    font-size: 1.8rem;
     color: lavender;
+    font-size: 0.6rem;
+    margin: 4rem 0;
+}
+
+nav img {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 0.2rem;
+    filter: invert(100%);
+}
+
+nav img:hover {
+    filter: invert(0%);
+    background-color: khaki;
 }
 
 nav a:hover {
     color: khaki;
-    font-size: 2.2rem;
 }
 
-.mobile, .companylogo {
-    display: none;
-}
-
+/* Desktop */
 @media only screen and (max-width: 2000px) {
-    nav a {
-        line-height: 2.6;
-        font-size: 2.8rem;
+    #header-section {
+        height: 73.5rem;
     }
-    
-    nav a:hover {
-        font-size: 3.2rem;
-    }    
 }
 
-@media only screen and (max-width: 1600px) {
-    header .name {
-        height: 7rem;
-        font-size: 4rem;
+@media only screen and (max-width: 1900px) {
+    #header-section {
+        height: 69.5rem;
     }
+}
 
-    nav a {
-        line-height: 2.3;
-        font-size: 2.5rem;
+@media only screen and (max-width: 1800px) {
+    #header-section {
+        height: 66.5rem;
     }
-    
-    nav a:hover {
-        font-size: 2.9rem;
-    }    
+}
+
+@media only screen and (max-width: 1700px) {
+    #header-section {
+        height: 62.5rem;
+    }
+}
+
+/* Laptop */
+@media only screen and (max-width: 1600px) {
+    #header-section {
+        height: 59.5rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #header-section {
+        height: 55.5rem;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
-    header .name {
-        height: 6rem;
-        font-size: 3rem;
+    #header-section {
+        height: 51.5rem;
     }
+}
 
-    nav a {
-        line-height: 1.6;
-        font-size: 1.8rem;
-    }
-    
-    nav a:hover {
-        font-size: 2.2rem;
+@media only screen and (max-width: 1300px) {
+    #header-section {
+        height: 47.5rem;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    header .name {
-        height: 5.4rem;
-        font-size: 2.7rem;
-    }
-
-    nav a {
-        line-height: 1.4;
-        font-size: 1.6rem;
-    }
-    
-    nav a:hover {
-        font-size: 2rem;
+    #header-section {
+        height: 40.5rem;
     }
 }
 
+/* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
-    header .name {
-        height: 4.8rem;
-        font-size: 2.4rem;
+    #header-section {
+        height: 38.5rem;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    header .name {
-        height: 3.6rem;
-        font-size: 1.9rem;
-    }
-
-    nav a {
-        line-height: 1.6;
-        font-size: 1.4rem;
-    }
-    
-    nav a:hover {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    header .name {
-        height: 3.4rem;
-        font-size: 1.7rem;
-    }
-
-    nav a {
-        line-height: 1.4;
-        font-size: 1.2rem;
-    }
-    
-    nav a:hover {
-        font-size: 1.6rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    header .name {
-        height: 3rem;
-        font-size: 1.9rem;
-    }
-      
-    nav li {
-        padding-left: 1rem;
-    }
-    
-    nav a {
-        font-size: 1.4rem;
-    }
-    
-    nav a:hover {
-        font-size: 1.8rem;
-    }    
-}
-
+/* Tablet */
 @media only screen and (max-width: 740px) {
-    header .name, .desktop {
-        display: none;
-    }
-    
-    header .content {
-        flex-direction: column;
-    }
-
-    .companylogo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .companylogo img {
-        max-height: 5rem;
-    }
-
-    #amm {
-        border-radius: 5%;
-    }
-    
-    #menuButton {
-        height: 4rem;
-        cursor: pointer;
-    }
-
-    #menuButton:focus {
-        border: 2px solid white;
-    }
-
-    .mobile {
-        position: absolute;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(103,56,136, 0.95);
-        overflow: auto;
-        z-index: 1;
-        width: 97.5%;
-        top: 6.4rem;
-    }
-
-    .mobile a {
-        color: white;
-        font-size: 1.6rem;
-        letter-spacing: 0.3rem;
-        width: 100%;
-        padding: 0.5rem;
-        border-bottom: 1px solid whitesmoke;
-    }
-
-    .show {
-        display: flex;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    .companylogo img {
-        max-height: 4rem;
-    }
-
-    #menuButton {
-        height: 3rem;
-    }
-
-    .mobile {
-        width: 97%;
-        top: 5.5rem;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .mobile {
-        width: 96.5%;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    .mobile {
-        width: 96%;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .companylogo img {
-        max-height: 3.5rem;
-    }
-
-    #menuButton {
-        height: 2.5rem;
-    }
-
-    .mobile {
-        top: 5rem;
-        width: 95.5%;
-    }
-}
-
-@media only screen and (max-width: 340px) {
-    .mobile {
-        width: 95%;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .mobile {
-        width: 94.9%;
-    }
-}
-
-/* About Section */
-#about-section, #about-container, #about-boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-    
-#about-container {
-    flex-direction: row;
-    width: 85%;
-    padding: 0.5rem;
-}
-
-#about-boxes {
-    width: 40%;
-}
-
-#about1-box, #about2-box {
-    padding: 0.5rem;
-    margin: 2rem auto;
-    max-width: 80%;
-    box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
-}
-
-#pic-box img {
-    height: 29rem;
-    width: 29rem;
-    border-radius: 50%;
-    border: 2px solid black;
-    margin-right: 5rem;
-    box-shadow: 0px 3px 4px 1px rgba(31,5,47,1); 
-}
-
-@media only screen and (max-width: 2000px) {
-    #pic-box img {
-        height: 40rem;
-        width: 40rem;
-    }    
-}
-
-@media only screen and (max-width: 1600px) {
-    #pic-box img {
-        height: 35rem;
-        width: 35rem;
-    }    
-}
-
-@media only screen and (max-width: 1400px) {
-    #pic-box img {
-        height: 30rem;
-        width: 30rem;
-    }    
-}
-
-@media only screen and (max-width: 1100px) {
-    #pic-box img {
-        height: 25rem;
-        width: 25rem;
-    }    
-}
-
-@media only screen and (max-width: 900px) {
-    #pic-box img {
-        height: 20rem;
-        width: 20rem;
-    }    
-}
-
-@media only screen and (max-width: 800px) {
-    #about-container {
-        flex-direction: column;
-    }
-
-    #about-boxes {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    #about1-box, #about2-box {
-        width: 50%;
-        height: 15rem;
-        margin: 1rem;
-    }
-
-    #pic-box img {
-        margin-right: 0;
-        height: 18rem;
-        width: 18rem;
+    #header-section {
+        height:40.5rem;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    #about1-box, #about2-box {
-        height: 16rem;
+    #header-section {
+        height:50.5rem;
     }
 }
 
-@media only screen and (max-width: 620px) {
-    #about1-box, #about2-box {
-        height: 19rem;
+/* Mobile */
+@media only screen and (max-width: 460px) {
+    #header-section {
+        height:53rem;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    #about-boxes {
-        flex-direction: column;
-    }
-    
-    #about1-box, #about2-box {
-        width: 90%;
-        height: auto;
-    }
-
-    #pic-box img {
-        height: 15rem;
-        width: 15rem;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #about-container {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #pic-box img {
-        height: 11rem;
-        width: 11rem;
+@media only screen and (max-width: 380px) {
+    #header-section {
+        height:55.5rem;
     }
 }
 
 @media only screen and (max-width: 360px) {
-    #about-container {
+    #header-section {
+        height:58rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    #header-section {
+        height:59rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #header-section {
+        height:61rem;
+    }
+}
+
+/* Home & Skills Section */
+#home-section, #home-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
+#home-container, #skills-section, #logo-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#home-container {
+    width: 100%;
+}
+
+#home-box {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    align-items: flex-start;
+    color: whitesmoke;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    text-shadow: -6px 6px 4px rgba(0,0,0,0.6);
+}
+
+#home1 {
+    text-align: left;
+}
+
+#home1 span {
+    color: yellow;
+    font-size: 2.5rem;
+}
+
+#home2, #home3 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+#home3 {
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+
+#pic-box img {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 6px 6px 6px 1px rgba(31,5,47,1); 
+}
+
+#skills-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#logo-box {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#logo-box img {
+    max-height: 2.5rem;
+    padding: 0 1rem;
+    filter: hue-rotate(180deg) invert(100%) drop-shadow(-6px 6px 0px #000000);
+}
+
+#logo-box #sql {
+    max-height: 3.8rem;
+}
+
+/* Laptop */
+@media only screen and (max-width: 1100px) {
+    #home-section {
+        width: 100%;
+        margin-left: 0.5rem;
+    }
+
+    #pic-box img {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    #skills-section {
+        align-items: flex-start;
+    }
+}
+
+/* Tablet Landscape */
+@media only screen and (max-width: 1000px) {
+    #home-box {
         width: 100%;
     }
 }
 
-/* Skills Section */
-#skills-section, #skills-container, #logo-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@media only screen and (max-width: 900px) {
+    #logo-box img {
+        max-height: 1.8rem;
+    }
+
+    #logo-box #sql {
+        max-height: 2.8rem;
+    }
 }
 
-#skills-container {
-    padding: 1rem 1rem 3rem;
-    box-shadow: -10px 8px 5px -2px rgba(31,5,47,1);
-    width: 85%;
-}
+/* Tablet */
+@media only screen and (max-width: 700px) {
+    #home-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-#logo-box {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-}
+    #pic-box img {
+        height: 8rem;
+        width: 8rem;
+        margin: 2rem 1rem;
+    }
 
-#logo-box img {
-    max-height: 8rem;
-    max-width: 10rem;
-    padding: 1rem;
-}
+    #skills-section {
+        margin-top: 0;
+    }
 
-@media only screen and (max-width: 800px) {
-    #skills-container {
+    #logo-box img {
         padding-bottom: 1rem;
     }
+}
+
+/* Mobile */
+@media only screen and (max-width: 420px) {
+    #home2 p {
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    #home2 p {
+        font-size: 0.7rem;
+    }
+}
+
+/* About Section */
+#about-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-box {
+    width: 40%;
+    font-size: larger;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+}
+
+#logoPic img {
+    height: 8rem;
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,1);
+}
+
+/* Tablet Landscape */
+@media only screen and (max-width: 1000px) {
+    #logoPic img {
+        height: 7rem;
+    }        
+}
+
+/* Tablet */
+@media only screen and (max-width: 700px) {
+    #about-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
-    #logo-box {
-        padding-top: 1rem;
-    }
-    
-    #logo-box img {
-        max-height: 7rem;
-        max-width: 9rem;
-    }    
-}
-
-@media only screen and (max-width: 600px) {
-    #skills-container {
-        padding: 0 1rem;
-    }
-    
-    #logo-box {
-        padding-top: 0;
+    #about-box {
+        width: 80%;
+        text-align: left;
     }
 
-    #logo-box img {
-        max-height: 6rem;
-        max-width: 8rem;
-        padding: 0.5rem;
+    #logoPic img {
+        height: 6rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
     }
 }
 
-@media only screen and (max-width: 560px) {
-    #skills-container {
-        padding: 0 0.5rem;
-    }
-    
-    #logo-box img {
-        max-height: 5rem;
-        max-width: 7rem;
+@media only screen and (max-width: 500px) {
+    #about-box {
+        width: 90%;
+    }   
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+    #logoPic img {
+        height: 5rem;
     }
 }
 
-@media only screen and (max-width: 520px) {
-    #logo-box img {
-        max-height: 4rem;
-        max-width: 6rem;
+@media only screen and (max-width: 320px) {
+    #about-box {
+        width: 85%;
+        padding-right: 0.5rem;
     }
-}
 
-@media only screen and (max-width: 460px) {
-    #logo-box img {
-        max-height: 3rem;
-        max-width: 5rem;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    #logo-box img {
-        max-height: 2.9rem;
-        max-width: 4.9rem;
+    #logoPic img {
+        height: 4rem;
+        margin-top: 0.5rem;
     }
 }
 
 /* Projects Section */
-#projects-section, #projects-container, #projects-box, .pbox, .code-box, .code, .topbox, .overlay1 {
+#projects-section, #projects-container, #projects-box, .pbox, .code-box, .code, .topbox, .overlay1, .overlay2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#projectsInfo-box {
+#projects-section {
     width: 100%;
 }
 
 #projects-box {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 1.5rem;
-    width: 96%;
+    width: 99%;
 }
 
 #project1-box, #project2-box, #project3-box {
     margin: 1rem;
-    width: 33%;
+    width: 30%;
     cursor: pointer;
-    box-shadow: -4px 4px 5px 0px rgba(0,0,0,1);
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,1);
 }
 
 .topbox {
@@ -751,26 +473,30 @@ nav a:hover {
 
 .overlay2 {
     background: rgba(102, 51, 153, 0.8);
-    font-size: 1.1rem;
     height: 13rem;
+    width: 100%;
     color: #fff;
     position: absolute;
-    padding: 0 0.3rem;
+    padding: 0 0.5rem;
     display: none;
+}
+
+.overlay2 p {
+    font-size: 1.2rem;
 }
 
 .overlay1 {
     position: absolute;
     width: 100%;
     height: 13rem;
+    padding: 0 0.5rem;
     background: rgba(67,78,94, 0.75);
     font-size: 2rem;
-    color: white;
 }
 
 .code-box {
     background-color: white;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
     width: 100%;
 }
 
@@ -779,292 +505,121 @@ nav a:hover {
 }
 
 .code p {
-    background-color: lavender;
+    background-color: rebeccapurple;
     border-radius: 5px;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     margin: 0.5rem;
-    font-size: 1rem;
 }
 
-span {
-    font-size: 1.2rem;
+.code-box span {
+    color: black;
+    font-size: larger;
+    text-shadow: -1px 1px 2px rgba(0,0,0,0.6);
 }
 
-@media only screen and (max-width: 2000px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 23rem;
-    }
-
-    .overlay1 {
-        font-size: 4rem;
-    }
-
-    .overlay2 {
-        font-size: 2.2rem;
-    }
-
-    .code p {
-        font-size: 2rem;
-    }
-
-    span {
-        font-size: 2.4rem;
-    }
-}
-
-@media only screen and (max-width: 1800px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 20rem;
-    }
-
-    .overlay1 {
-        font-size: 3.3rem;
-    }
-
-    .overlay2 {
-        font-size: 1.9rem;
-    }
-
-    .code p {
-        font-size: 1.8rem;
-    }
-
-    span {
-        font-size: 2.2rem;
-    }
-}
-
-@media only screen and (max-width: 1600px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 17rem;
-    }
-}
-
-@media only screen and (max-width: 1560px) {
-    .overlay2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 14rem;
-    }
-
-    .overlay1 {
-        font-size: 2.7rem;
-    }
-
-    .overlay2 {
-        font-size: 1.4rem;
-    }
-
-    .code p {
-        font-size: 1.4rem;
-    }
-
-    span {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 12rem;
-    }
-
-    .overlay1 {
-        font-size: 2.3rem;
-    }
-
-    .overlay2 {
-        font-size: 1.1rem;
-    }
-
-    .code p {
-        font-size: 1rem;
-    }
-
-    span {
-        font-size: 1.4rem;
-    }
-}
-
+/* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 10rem;
-    }
-
-    .overlay1 {
-        font-size: 1.75rem;
-    }
-
-    .overlay2 {
-        font-size: 1rem;
-    }
-
-    .code-box {
-        padding-bottom: 0.2rem;
-    }
-
-    .code p {
-        font-size: 1rem;
-    }
-
-    span {
-        font-size: 1.2rem;
+    .topbox, .topbox img, .overlay1, .overlay2 {
+        height: 11rem;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    #projectsInfo-box {
-        width: 75%;
-        padding: 0 0.5rem;
+@media only screen and (max-width: 900px) {
+    .code p {
+        font-size: smaller;
+        margin: 0 0.5rem;
     }
 
+    .code-box span {
+        font-size: smaller;
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
     #projects-box {
-        flex-direction: column;
-        margin-top: 1rem;
-        width: 60%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 0;
     }
 
     #project1-box, #project2-box, #project3-box {
-        margin: 1rem;
-        width: 100%;
+        width: 45%;
+        margin: 0.5rem;
     }
 
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 15rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #projects-box {
-        width: 70%;
-    }
-
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 13rem;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #projectsInfo-box, #projects-box {
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    #projectsInfo-box, #projects-box {
-        width: 88%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #projects-box {
-        width: 90%;
-    }
-
-    .code-box {
-        padding-bottom: 0.1rem;
-    }
-
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 11rem;
-    }
-
-    .overlay2 {
-        font-size: 0.9rem;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .overlay1 {
-        font-size: 1.7rem;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
-        height: 10rem;
-    }
-
-    .overlay2 {
-        font-size: 0.8rem;
-    }
-}
-
-@media only screen and (max-width: 340px) {
-    .overlay1 {
-        font-size: 1.5rem;
-    }
-
-    .code p {
-        font-size: 0.8rem;
-    }
-
-    span {
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .topbox, .topbox img, .overlay2, .overlay1 {
+    .topbox, .topbox img, .overlay1, .overlay2 {
         height: 9rem;
     }
+}
 
-    .overlay2 {
-        font-size: 0.7rem;
+/* Tablet */
+@media only screen and (max-width: 700px) {
+    #projects-box {
+        flex-direction: column;
+    }
+
+    #project1-box, #project2-box, #project3-box {
+        width: 90%;
+        margin: 1rem;
     }
 }
 
-@media only screen and (max-width: 300px) {
-    .overlay2 {
-        font-size: 0.5rem;
+/* Mobile */
+@media only screen and (max-width: 320px) {
+    #project1-box, #project2-box, #project3-box {
+        width: 88%;
     }
 
     .code p {
-        font-size: 0.6rem;
+        margin: 0 0.2rem;
     }
 
-    span {
-        font-size: 0.8rem;
+    .overlay1 {
+        font-size: 1.8rem;
     }
 }
 
 /* Contact Section */
 #contact-section, #contact-container, #contactInfo-box, #contact-box, #contacts, #form-box, #form-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
-#contactInfo-box {
-    width: 85%;
-    padding: 0 0.5rem;
+#contact-section {
+    width: 90%;
+    flex-direction: row;
+    margin-left: 1rem;
 }
 
-#form-box {
-    width: 85%;
+#icon img {
+    height: 10rem;
+    filter: drop-shadow(-1px 1px 2px #fbf4f4);
+}
+
+#contactInfo-box {
+    width: 70%;
+    padding: 0 0.5rem;
+    text-align: left;
+}
+
+
+#form-box, form, .contact-message {
+    width: 100%;
 }
 
 #contact-box {
-    background-color: #d5cbe3;
-    box-shadow: -4px 4px 5px 0px rgba(0,0,0,1);
     margin-top: 1rem;
-    width: 87%;
-}
-
-form, .contact-message {
-    width: 100%;
+    width: 70%;
+    justify-content: center;
 }
 
 #contacts {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .contact-name, .contact-email {
@@ -1073,16 +628,19 @@ form, .contact-message {
 
 .contact-name input, .contact-email input, textarea {
     width: 95%;
+    font-family: "Special Elite";
+    font-size: larger;
+    background-color: lavender;
     box-shadow: 1px -1px 0px 1px rgba(0,0,0,0.2) inset;
 }
 
-.contact-name input, .contact-email input {
+.contact-name input, .contact-email input, #form-container button {
     height: 2rem;
 }
 
 #form-container button {
     font-size: 1.2rem;
-    height: 2rem;
+    margin-left: 1rem;
 }
 
 #form-container button:active {
@@ -1090,166 +648,69 @@ form, .contact-message {
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-@media only screen and (max-width: 2000px) {
-    .contact-name input, .contact-email input {
-        font-size: 2rem;
-        height: 3rem;
-    }
-
-    textarea {
-        font-size: 2rem;
-    }
-
-    #form-container button {
-        font-size: 2rem;
-        height: 4rem;
-    }
+#github {
+    display: none;
 }
 
-@media only screen and (max-width: 1400px) {
-    .contact-name input, .contact-email input {
-        font-size: 1.6rem;
-        height: 2rem;
+/* Tablet */
+@media only screen and (max-width: 700px) {
+    #icon img {
+        display: none;
     }
 
-    textarea {
-        font-size: 1.6rem;
+    #contactInfo-box h2 {
+        display: flex;
+        align-items: center;
     }
 
-    #form-container button {
-        font-size: 1.6rem;
-        height: 3.2rem;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .contact-name input, .contact-email input {
-        font-size: 1.2rem;
-        height: 1.9rem;
+    #github {
+        display: block;
     }
 
-    textarea {
-        font-size: 1.2rem;
+    #github img {
+        height: 5rem;
+        margin: 0 2rem;
+        filter: drop-shadow(-1px 1px 2px #fbf4f4);
     }
 
-    #form-container button {
-        font-size: 1.2rem;
-        height: 2rem;
-    }
-}
-
-@media only screen and (max-width: 660px) {
-    #contact-box {
+    #contactInfo-box, #contact-box {
         width: 90%;
     }
+}
 
-    #contacts {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .contact-name, .contact-email {
-        width: 80%;
-        padding: 0.5rem ;
-    }
-
-    textarea {
-        width: 76%;
+@media only screen and (max-width: 600px) {
+    #contactInfo-box, #contact-box {
+        width: 98%;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    #contacts {
+        flex-direction: column;
+        padding: 0;
+    }
+    
     .contact-name, .contact-email {
         width: 100%;
-    }
-
-    textarea {
-        width: 96%;
+        padding-bottom: 0.5rem;
     }
 }
 
-/* Footer Section*/
-#footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    background-color: #a7adba;
-    font-family: 'Special Elite';
-}
-
-#icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#icon a, #icon a:visited {
-    color: rebeccapurple;
-}
-  
-#footer img {
-    height: 3rem;
-    padding-right: 1rem;
-}
-
-@media only screen and (max-width: 900px) {
-    #footer {
-        font-size: 1.4rem;
+/* Mobile */
+@media only screen and (max-width: 400px) {
+    #contactInfo-box h2 {
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
     
-    #footer img {
-        height: 2.8rem;
+    #github img {
+        height: 4rem;
+        margin: 1rem;
     }
-}
-
-@media only screen and (max-width: 800px) {
-    #footer {
-        font-size: 1.3rem;
-    }
-    
-    #footer img {
-        height: 2.5rem;
-    }
-}
-
-@media only screen and (max-width: 660px) {
-    #icon p {
-        display: none;
-    }
-
-    #footer img {
-        padding-right: 0;
-    }
-}
-
-@media only screen and (max-width: 580px) {
-    #footer {
-        font-size: 1.1rem;
-    }
-    
-    #footer img {
-        height: 2rem;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    #footer {
-        font-size: 0.9rem;
-    }
-    
-    #footer img {
-        height: 1.8rem;
-    }
-}
+}   
 
 @media only screen and (max-width: 300px) {
-    #footer {
-        font-size: 0.8rem;
-    }
-    
-    #footer img {
-        height: 1.2rem;
+    #contactInfo-box, #contact-box {
+        width: 92%;
     }
 }
