@@ -53,7 +53,6 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
 a {
@@ -62,25 +61,6 @@ a {
 
 a:visited {
     color: white;
-}
-
-@media only screen and (max-width: 900px) {
-    }
-
-@media only screen and (max-width: 800px) {
-    
-}
-
-@media only screen and (max-width: 700px) {
-    
-}
-
-@media only screen and (max-width: 340px) {
-    
-}
-
-@media only screen and (max-width: 300px) {
-    
 }
 
 /* Header */
@@ -126,20 +106,73 @@ nav a:hover {
     color: khaki;
 }
 
-.mobile, .companylogo {
-    display: none;
+/* Desktop */
+@media only screen and (max-width: 2000px) {
+    #header-section {
+        height: 73.5rem;
+    }
 }
 
-/* Tablet Landscape */
+@media only screen and (max-width: 1900px) {
+    #header-section {
+        height: 69.5rem;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    #header-section {
+        height: 66.5rem;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    #header-section {
+        height: 62.5rem;
+    }
+}
+
+/* Laptop */
+@media only screen and (max-width: 1600px) {
+    #header-section {
+        height: 59.5rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #header-section {
+        height: 55.5rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #header-section {
+        height: 51.5rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #header-section {
+        height: 47.5rem;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     #header-section {
         height: 40.5rem;
     }
 }
 
+/* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
     #header-section {
         height: 38.5rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 740px) {
+    #header-section {
+        height:40.5rem;
     }
 }
 
@@ -149,9 +182,34 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 300px) {
+/* Mobile */
+@media only screen and (max-width: 460px) {
     #header-section {
-        height:58.5rem;
+        height:53rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #header-section {
+        height:55.5rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #header-section {
+        height:58rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    #header-section {
+        height:59rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #header-section {
+        height:61rem;
     }
 }
 
@@ -218,7 +276,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 #logo-box {
@@ -232,7 +290,11 @@ nav a:hover {
     filter: hue-rotate(180deg) invert(100%) drop-shadow(-6px 6px 0px #000000);
 }
 
-/* Tablet Landscape */
+#logo-box #sql {
+    max-height: 3.8rem;
+}
+
+/* Laptop */
 @media only screen and (max-width: 1100px) {
     #home-section {
         width: 100%;
@@ -249,6 +311,7 @@ nav a:hover {
     }
 }
 
+/* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
     #home-box {
         width: 100%;
@@ -259,8 +322,13 @@ nav a:hover {
     #logo-box img {
         max-height: 1.8rem;
     }
+
+    #logo-box #sql {
+        max-height: 2.8rem;
+    }
 }
 
+/* Tablet */
 @media only screen and (max-width: 700px) {
     #home-container {
         flex-direction: column;
@@ -270,7 +338,7 @@ nav a:hover {
     #pic-box img {
         height: 8rem;
         width: 8rem;
-        margin: 1rem;
+        margin: 2rem 1rem;
     }
 
     #skills-section {
@@ -282,6 +350,7 @@ nav a:hover {
     }
 }
 
+/* Mobile */
 @media only screen and (max-width: 420px) {
     #home2 p {
         font-size: smaller;
@@ -313,12 +382,14 @@ nav a:hover {
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,1);
 }
 
+/* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
     #logoPic img {
         height: 7rem;
     }        
 }
 
+/* Tablet */
 @media only screen and (max-width: 700px) {
     #about-container {
         flex-direction: column;
@@ -343,6 +414,7 @@ nav a:hover {
     }   
 }
 
+/* Mobile */
 @media only screen and (max-width: 400px) {
     #logoPic img {
         height: 5rem;
@@ -411,7 +483,6 @@ nav a:hover {
 
 .overlay2 p {
     font-size: 1.2rem;
-    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
 .overlay1 {
@@ -421,8 +492,6 @@ nav a:hover {
     padding: 0 0.5rem;
     background: rgba(67,78,94, 0.75);
     font-size: 2rem;
-    color: white;
-    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
 .code-box {
@@ -440,15 +509,15 @@ nav a:hover {
     border-radius: 5px;
     padding: 0.5rem;
     margin: 0.5rem;
-    text-shadow: -2px 2px 2px rgba(0,0,0,0.6);
 }
 
 .code-box span {
     color: black;
     font-size: larger;
-    text-shadow: -1px 1px 1px rgba(0,0,0,0.6);
+    text-shadow: -1px 1px 2px rgba(0,0,0,0.6);
 }
 
+/* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
     .topbox, .topbox img, .overlay1, .overlay2 {
         height: 11rem;
@@ -464,9 +533,7 @@ nav a:hover {
     .code-box span {
         font-size: smaller;
         margin-bottom: 0.3rem;
-        text-shadow: -1px 1px 2px rgba(0,0,0,0.6);
     }
-
 }
 
 @media only screen and (max-width: 880px) {
@@ -485,9 +552,9 @@ nav a:hover {
     .topbox, .topbox img, .overlay1, .overlay2 {
         height: 9rem;
     }
-
 }
 
+/* Tablet */
 @media only screen and (max-width: 700px) {
     #projects-box {
         flex-direction: column;
@@ -499,6 +566,7 @@ nav a:hover {
     }
 }
 
+/* Mobile */
 @media only screen and (max-width: 320px) {
     #project1-box, #project2-box, #project3-box {
         width: 88%;
@@ -511,9 +579,6 @@ nav a:hover {
     .overlay1 {
         font-size: 1.8rem;
     }
-}
-
-@media only screen and (max-width: 300px) {
 }
 
 /* Contact Section */
@@ -540,7 +605,7 @@ nav a:hover {
 }
 
 
-#form-box {
+#form-box, form, .contact-message {
     width: 100%;
 }
 
@@ -548,10 +613,6 @@ nav a:hover {
     margin-top: 1rem;
     width: 70%;
     justify-content: center;
-}
-
-form, .contact-message {
-    width: 100%;
 }
 
 #contacts {
@@ -573,13 +634,12 @@ form, .contact-message {
     box-shadow: 1px -1px 0px 1px rgba(0,0,0,0.2) inset;
 }
 
-.contact-name input, .contact-email input {
+.contact-name input, .contact-email input, #form-container button {
     height: 2rem;
 }
 
 #form-container button {
     font-size: 1.2rem;
-    height: 2rem;
     margin-left: 1rem;
 }
 
@@ -592,6 +652,7 @@ form, .contact-message {
     display: none;
 }
 
+/* Tablet */
 @media only screen and (max-width: 700px) {
     #icon img {
         display: none;
@@ -617,11 +678,13 @@ form, .contact-message {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     #contactInfo-box, #contact-box {
         width: 98%;
     }
+}
 
+@media only screen and (max-width: 500px) {
     #contacts {
         flex-direction: column;
         padding: 0;
@@ -633,6 +696,7 @@ form, .contact-message {
     }
 }
 
+/* Mobile */
 @media only screen and (max-width: 400px) {
     #contactInfo-box h2 {
         flex-direction: column-reverse;
