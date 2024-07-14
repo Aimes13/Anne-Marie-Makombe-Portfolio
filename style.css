@@ -59,6 +59,10 @@ a {
     text-decoration: none;
 }
 
+.repo {
+    text-decoration: underline;
+}
+
 a:visited {
     color: white;
 }
