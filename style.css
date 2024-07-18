@@ -632,10 +632,13 @@ nav a:hover {
 }
 
 #contact-section {
-    width: 90%;
+    width: 65%;
     flex-direction: column;
-    margin-left: 1rem;
+    padding: 0 1rem;
     font-size: larger;
+    letter-spacing: 0.1rem;
+    line-height: 1.9rem;
+    align-items: center;
 }
 
 picture {
@@ -645,9 +648,9 @@ picture {
 
 #icon {
     display: flex;
-    justify-content: space-around;
-    width: 50%;
-    padding: 0.5rem;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 90%;
 }
 
 #icon img {
@@ -657,9 +660,9 @@ picture {
 }
 
 #contactInfo-box {
-    width: 70%;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     text-align: left;
+    border: 2px solid red;
 }
 
 
@@ -710,65 +713,26 @@ picture {
     display: none;
 }
 
-/* Tablet */
-@media only screen and (max-width: 700px) {
-    #icon img {
-        display: none;
-    }
-
-    #contactInfo-box h2 {
-        display: flex;
-        align-items: center;
-    }
-
-    #github {
-        display: block;
-    }
-
-    #github img {
-        height: 5rem;
-        margin: 0 2rem;
-        filter: drop-shadow(-1px 1px 2px #fbf4f4);
-    }
-
-    #contactInfo-box, #contact-box {
+/* Laptop */
+@media only screen and (max-width: 900px) {
+    #contact-section {
         width: 90%;
     }
 }
 
+/* Tablet */
 @media only screen and (max-width: 600px) {
-    #contactInfo-box, #contact-box {
+    #contactInfo-box {
         width: 98%;
     }
-}
 
-@media only screen and (max-width: 500px) {
-    #contacts {
+    #icon {
         flex-direction: column;
-        padding: 0;
-    }
-    
-    .contact-name, .contact-email {
         width: 100%;
-        padding-bottom: 0.5rem;
     }
-}
 
-/* Mobile */
-@media only screen and (max-width: 400px) {
-    #contactInfo-box h2 {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-    
-    #github img {
-        height: 4rem;
-        margin: 1rem;
-    }
-}   
-
-@media only screen and (max-width: 300px) {
-    #contactInfo-box, #contact-box {
-        width: 92%;
+    #icon img {
+        padding: 1rem;
+        height: 13rem;
     }
 }
