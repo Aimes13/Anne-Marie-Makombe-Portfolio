@@ -601,30 +601,11 @@ nav a:hover {
 
 @media only screen and (max-width: 880px) {
     .projects-box {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        margin-top: 0;
-    }
-
-    #project1-box, #project2-box, #project3-box, #project4-box, #project5-box, #project6-box {
-        width: 45%;
-        margin: 0.5rem;
-    }
-
-    .topbox, .topbox img, .overlay1, .overlay2 {
-        height: 9rem;
-    }
-}
-
-/* Tablet */
-@media only screen and (max-width: 700px) {
-    .projects-box {
         flex-direction: column;
     }
 
     #project1-box, #project2-box, #project3-box, #project4-box, #project5-box, #project6-box {
-        width: 90%;
+        width: 85%;
         margin: 1rem;
     }
 }
