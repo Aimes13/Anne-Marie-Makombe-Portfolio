@@ -438,7 +438,7 @@ nav a:hover {
 }
 
 /* Projects Section */
-#projects-section, #projects-container, #projects-box, .pbox, .code-box, .code, .topbox, .overlay1, .overlay2 {
+#projects-section, #projects-container, .projects-box, .pbox, .code-box, .code, .topbox, .overlay1, .overlay2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,14 +449,14 @@ nav a:hover {
     width: 100%;
 }
 
-#projects-box {
+.projects-box {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 1.5rem;
-    width: 99%;
+    width: 96%;
 }
 
-#project1-box, #project2-box, #project3-box {
+#project1-box, #project2-box, #project3-box, #project4-box, #project5-box, #project6-box {
     margin: 1rem;
     width: 30%;
     cursor: pointer;
@@ -541,14 +541,14 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 880px) {
-    #projects-box {
+    .projects-box {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
         margin-top: 0;
     }
 
-    #project1-box, #project2-box, #project3-box {
+    #project1-box, #project2-box, #project3-box, #project4-box, #project5-box, #project6-box {
         width: 45%;
         margin: 0.5rem;
     }
@@ -560,11 +560,11 @@ nav a:hover {
 
 /* Tablet */
 @media only screen and (max-width: 700px) {
-    #projects-box {
+    .projects-box {
         flex-direction: column;
     }
 
-    #project1-box, #project2-box, #project3-box {
+    #project1-box, #project2-box, #project3-box, #project4-box, #project5-box, #project6-box {
         width: 90%;
         margin: 1rem;
     }
@@ -572,7 +572,7 @@ nav a:hover {
 
 /* Mobile */
 @media only screen and (max-width: 320px) {
-    #project1-box, #project2-box, #project3-box {
+    #project1-box, #project2-box, #project3-box, #project4-box, #project5-box, #project6-box {
         width: 88%;
     }
 
