@@ -68,18 +68,17 @@ a:visited {
 }
 
 /* Header */
-#header-section, nav .desktop {
+#header-section, #about-header, nav .desktop {
     display: flex;
     align-items: center;
-    height: 43.5rem;
     background-color: black;
 }
 
-#header-section .content {
+#header-section .content, #about-header .content {
     padding: 0 0.5rem;
 }
 
-#header-section nav .desktop {
+#header-section nav .desktop, #about-header nav .desktop {
     flex-direction: column;
     height: fit-content;
 }
@@ -113,63 +112,57 @@ nav a:hover {
 /* Desktop */
 @media only screen and (max-width: 2000px) {
     #header-section {
-        height: 85rem;
+        height: 70rem;
     }
 }
 
 @media only screen and (max-width: 1900px) {
     #header-section {
-        height: 69.5rem;
+        height: 65rem;
     }
 }
 
 @media only screen and (max-width: 1800px) {
     #header-section {
-        height: 66.5rem;
+        height: 62rem;
     }
 }
 
 @media only screen and (max-width: 1700px) {
     #header-section {
-        height: 62.5rem;
+        height: 58rem;
     }
 }
 
 /* Laptop */
 @media only screen and (max-width: 1600px) {
     #header-section {
-        height: 59.5rem;
+        height: 55rem;
     }
 }
 
 @media only screen and (max-width: 1500px) {
     #header-section {
-        height: 55.5rem;
+        height: 52rem;
     }
 }
 
 @media only screen and (max-width: 1400px) {
     #header-section {
-        height: 51.5rem;
+        height: 50rem;
     }
 }
 
 @media only screen and (max-width: 1300px) {
     #header-section {
-        height: 47.5rem;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    #header-section {
-        height: 40.5rem;
+        height: 49rem;
     }
 }
 
 /* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
     #header-section {
-        height: 38.5rem;
+        height: 45rem;
     }
 }
 
@@ -370,15 +363,18 @@ nav a:hover {
 /* About Section */
 #about-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
 #about-box {
-    width: 40%;
+    width: 90%;
     font-size: larger;
-    line-height: 1.8rem;
-    padding-left: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.9rem;
+    text-align: left;
+    padding: 1% 0;
 }
 
 #logoPic img {
@@ -386,36 +382,96 @@ nav a:hover {
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,1);
 }
 
+/* Desktop */
+@media only screen and (max-width: 2000px) {
+    #about-header {
+        height: 72rem;
+    }
+}
+
+@media only screen and (max-width: 1900px) {
+    #about-header {
+        height: 73rem;
+    }
+}
+
+/* Laptop */ 
+@media only screen and (max-width: 1600px) {
+    #about-header {
+        height: 77rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #about-header {
+        height: 79rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #about-header {
+        height: 82rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #about-header {
+        height: 90rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #about-header {
+        height: 93rem;
+    }
+}
+
 /* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
     #logoPic img {
         height: 7rem;
-    }        
+    }
+    
+    #about-header {
+        height: 98rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #about-header {
+        height: 102rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #about-header {
+        height: 113rem;
+    }
 }
 
 /* Tablet */
 @media only screen and (max-width: 700px) {
-    #about-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    #about-box {
-        width: 80%;
-        text-align: left;
-    }
-
     #logoPic img {
         height: 6rem;
         margin-top: 2rem;
         margin-left: 1rem;
     }
+
+    #about-header {
+        height: 127rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #about-header {
+        height: 144rem;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-    #about-box {
-        width: 90%;
-    }   
+    #about-header {
+        height: 171rem;
+    }  
 }
 
 /* Mobile */
@@ -423,17 +479,20 @@ nav a:hover {
     #logoPic img {
         height: 5rem;
     }
+
+    #about-header {
+        height: 217rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
-    #about-box {
-        width: 85%;
-        padding-right: 0.5rem;
-    }
-
     #logoPic img {
         height: 4rem;
         margin-top: 0.5rem;
+    }
+
+    #about-header {
+        height: 290rem;
     }
 }
 
