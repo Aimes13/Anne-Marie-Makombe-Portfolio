@@ -68,17 +68,18 @@ a:visited {
 }
 
 /* Header */
-#header-section, #about-header, nav .desktop {
+#home-header, #about-header, #projects-header, #contacts-header, nav .desktop {
     display: flex;
     align-items: center;
     background-color: black;
 }
 
-#header-section .content, #about-header .content {
+#home-header .content, #about-header .content, #projects-header .content, #contacts-header .content {
     padding: 0 0.5rem;
 }
 
-#header-section nav .desktop, #about-header nav .desktop {
+#home-header nav .desktop, #about-header nav .desktop, #projects-header nav .desktop, 
+#contacts-header nav .desktop {
     flex-direction: column;
     height: fit-content;
 }
@@ -111,102 +112,198 @@ nav a:hover {
 
 /* Desktop */
 @media only screen and (max-width: 2000px) {
-    #header-section {
+    #home-header, #projects-header, #contacts-header {
         height: 70rem;
+    }
+
+    #about-header {
+        height: 74rem;
     }
 }
 
 @media only screen and (max-width: 1900px) {
-    #header-section {
+    #home-header, #projects-header, #contacts-header {
         height: 65rem;
+    }
+
+    #about-header {
+        height: 76rem;
     }
 }
 
 @media only screen and (max-width: 1800px) {
-    #header-section {
+    #home-header, #projects-header, #contacts-header {
         height: 62rem;
     }
 }
 
 @media only screen and (max-width: 1700px) {
-    #header-section {
+    #home-header, #projects-header, #contacts-header {
         height: 58rem;
     }
 }
 
 /* Laptop */
 @media only screen and (max-width: 1600px) {
-    #header-section {
+    #home-header, #projects-header, #contacts-header {
         height: 55rem;
+    }
+
+    #about-header {
+        height: 79rem;
     }
 }
 
 @media only screen and (max-width: 1500px) {
-    #header-section {
+    #home-header, #contacts-header {
         height: 52rem;
+    }
+
+    #about-header {
+        height: 81rem;
     }
 }
 
 @media only screen and (max-width: 1400px) {
-    #header-section {
+    #home-header {
         height: 50rem;
+    }
+
+    #about-header {
+        height: 85rem;
+    }
+
+    #contacts-header {
+        height: 47rem;
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    #header-section {
+    #home-header {
         height: 49rem;
+    }
+
+    #about-header {
+        height: 92rem;
+    }
+
+    #contacts-header {
+        height: 44rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #contacts-header {
+        height: 40rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #about-header {
+        height: 96rem;
+    }
+
+    #contacts-header {
+        height: 38rem;
     }
 }
 
 /* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
-    #header-section {
-        height: 45rem;
+    #home-header, #projects-header {
+        height: 47rem;
+    }
+
+    #about-header {
+        height: 100rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #about-header {
+        height: 104rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    #projects-header {
+        height: 115rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #about-header {
+        height: 115rem;
     }
 }
 
 /* Tablet */
 @media only screen and (max-width: 740px) {
-    #header-section {
+    #home-header {
         height:40.5rem;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    #header-section {
+    #home-header {
         height:50.5rem;
+    }
+
+    #about-header {
+        height: 129rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #about-header {
+        height: 146rem;
+    }
+
+    #contacts-header {
+        height: 60rem;
     }
 }
 
 /* Mobile */
-@media only screen and (max-width: 460px) {
-    #header-section {
+@media only screen and (max-width: 500px) {
+    #home-header {
+        height:52rem;
+    }
+
+    #about-header {
+        height: 173rem;
+    }
+
+    #contacts-header {
+        height: 61rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #home-header {
         height:53rem;
     }
-}
 
-@media only screen and (max-width: 380px) {
-    #header-section {
-        height:55.5rem;
+    #about-header {
+        height: 219rem;
     }
-}
 
-@media only screen and (max-width: 360px) {
-    #header-section {
-        height:58rem;
+    #contacts-header {
+        height: 65rem;
     }
 }
 
 @media only screen and (max-width: 340px) {
-    #header-section {
+    #home-header {
         height:59rem;
     }
-}
 
-@media only screen and (max-width: 320px) {
-    #header-section {
-        height:61rem;
+    #about-header {
+        height: 274rem;
+    }
+
+    #contacts-header {
+        height: 67rem;
     }
 }
 
@@ -394,73 +491,14 @@ nav a:hover {
 
 #logoPic img {
     height: 8rem;
+    margin-bottom: 10%;
     box-shadow: -10px 10px 5px 0px rgba(0,0,0,1);
-}
-
-/* Desktop */
-@media only screen and (max-width: 2000px) {
-    #about-header {
-        height: 72rem;
-    }
-}
-
-@media only screen and (max-width: 1900px) {
-    #about-header {
-        height: 73rem;
-    }
-}
-
-/* Laptop */ 
-@media only screen and (max-width: 1600px) {
-    #about-header {
-        height: 77rem;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    #about-header {
-        height: 79rem;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    #about-header {
-        height: 82rem;
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    #about-header {
-        height: 90rem;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    #about-header {
-        height: 93rem;
-    }
 }
 
 /* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
     #logoPic img {
         height: 7rem;
-    }
-    
-    #about-header {
-        height: 98rem;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    #about-header {
-        height: 102rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #about-header {
-        height: 113rem;
     }
 }
 
@@ -471,22 +509,6 @@ nav a:hover {
         margin-top: 2rem;
         margin-left: 1rem;
     }
-
-    #about-header {
-        height: 127rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #about-header {
-        height: 144rem;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #about-header {
-        height: 171rem;
-    }  
 }
 
 /* Mobile */
@@ -494,20 +516,12 @@ nav a:hover {
     #logoPic img {
         height: 5rem;
     }
-
-    #about-header {
-        height: 217rem;
-    }
 }
 
 @media only screen and (max-width: 320px) {
     #logoPic img {
         height: 4rem;
         margin-top: 0.5rem;
-    }
-
-    #about-header {
-        height: 290rem;
     }
 }
 
@@ -617,6 +631,7 @@ nav a:hover {
 @media only screen and (max-width: 880px) {
     .projects-box {
         flex-direction: column;
+        padding-bottom: 5%;
     }
 
     #project1-box, #project2-box, #project3-box, #project4-box, #project5-box, #project6-box {
@@ -647,8 +662,14 @@ nav a:hover {
     align-items: center;
 }
 
+#contact-section {
+    justify-content: flex-start;
+    margin-left: 2%;
+}
+
 #contact-container {
     flex-direction: column;
+    align-items: flex-start;
     width: 70%;
     font-size: larger;
     letter-spacing: 0.1rem;
@@ -667,27 +688,39 @@ picture {
     align-items: center;
 }
 
+#icon {
+    justify-content: space-between;
+    width: 80%;
+}
 #icon img {
     height: 10rem;
     filter: drop-shadow(-1px 1px 2px #fbf4f4);
 }
 
 /* Desktop */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     #contact-container {
         width: 100%;
-        padding: 0 2%;
     }
 }
 
 /* Tablet */
-@media only screen and (max-width: 600px) {    
+@media only screen and (max-width: 800px) {    
     #contact-container {
         text-align: center;
+        align-items: center;
     }
 
     #icon {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 600px) {    
+    #icon {
         flex-direction: column;
+        padding-bottom: 5%;
     }
 
     #icon img {
