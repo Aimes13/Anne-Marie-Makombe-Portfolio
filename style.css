@@ -366,6 +366,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    border: 2px solid red;
 }
 
 #about-box {
@@ -375,6 +376,7 @@ nav a:hover {
     line-height: 1.9rem;
     text-align: left;
     padding: 1% 0;
+    border: 2px solid white;
 }
 
 #logoPic img {
@@ -625,114 +627,58 @@ nav a:hover {
     }
 }
 
-/* Contact Section */
-#contact-section, #contact-container, #contactInfo-box, #contact-box, #contacts, #form-box, #form-container {
+#contact-section, #contact-container, #icon {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#contact-section {
-    width: 65%;
+#contact-container {
     flex-direction: column;
-    padding: 0 1rem;
+    width: 70%;
     font-size: larger;
     letter-spacing: 0.1rem;
     line-height: 1.9rem;
-    align-items: center;
+    text-align: left;
+    padding: 0 1%;
+    border: 2px solid white;
+}
+
+#contactInfo-box {
+    width: 100%;
 }
 
 picture {
     display: flex;
     flex-direction: column;
-}
-
-#icon {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-    width: 90%;
+    align-items: center;
 }
 
 #icon img {
     height: 10rem;
     filter: drop-shadow(-1px 1px 2px #fbf4f4);
-    padding-bottom: 0.5rem;
 }
 
-#contactInfo-box {
-    padding: 0.5rem;
-    text-align: left;
-    border: 2px solid red;
-}
-
-
-#form-box, form, .contact-message {
-    width: 100%;
-}
-
-#contact-box {
-    margin-top: 1rem;
-    width: 70%;
-    justify-content: center;
-}
-
-#contacts {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0.5rem 0;
-}
-
-.contact-name, .contact-email {
-    width: 47%;
-}
-
-.contact-name input, .contact-email input, textarea {
-    width: 95%;
-    font-family: "Special Elite";
-    font-size: larger;
-    background-color: lavender;
-    box-shadow: 1px -1px 0px 1px rgba(0,0,0,0.2) inset;
-}
-
-.contact-name input, .contact-email input, #form-container button {
-    height: 2rem;
-}
-
-#form-container button {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-}
-
-#form-container button:active {
-    box-shadow: inset -2px -2px 3px rgba(191, 64, 191, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-#github {
-    display: none;
-}
-
-/* Laptop */
-@media only screen and (max-width: 900px) {
-    #contact-section {
-        width: 90%;
+/* Desktop */
+@media only screen and (max-width: 1000px) {
+    #contact-container {
+        width: 100%;
+        padding: 0 2%;
     }
 }
 
 /* Tablet */
-@media only screen and (max-width: 600px) {
-    #contactInfo-box {
-        width: 98%;
+@media only screen and (max-width: 600px) {    
+    #contact-container {
+        text-align: center;
     }
 
     #icon {
         flex-direction: column;
-        width: 100%;
     }
 
     #icon img {
         padding: 1rem;
-        height: 13rem;
     }
 }
