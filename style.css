@@ -113,17 +113,7 @@ nav a:hover {
 /* Desktop */
 @media only screen and (max-width: 2000px) {
     #home-header, #projects-header, #contacts-header {
-        height: 70rem;
-    }
-
-    #about-header {
-        height: 74rem;
-    }
-}
-
-@media only screen and (max-width: 1920px) {
-    #home-header, #projects-header, #contacts-header {
-        height: 54rem;
+        height: 75rem;
     }
 
     #about-header {
@@ -131,21 +121,27 @@ nav a:hover {
     }
 }
 
+@media only screen and (max-width: 1940px) {
+    #home-header, #projects-header, #contacts-header {
+        height: 55rem;
+    }
+}
+
 @media only screen and (max-width: 1900px) {
     #home-header, #projects-header, #contacts-header {
-        height: 65rem;
+        height: 75rem;
     }
 }
 
 @media only screen and (max-width: 1800px) {
     #home-header, #projects-header, #contacts-header {
-        height: 62rem;
+        height: 63rem;
     }
 }
 
 @media only screen and (max-width: 1700px) {
-    #home-header, #projects-header, #contacts-header {
-        height: 58rem;
+    #about-header {
+        height: 79rem;
     }
 }
 
@@ -156,160 +152,136 @@ nav a:hover {
     }
 
     #about-header {
-        height: 79rem;
+        height: 81rem;
     }
 }
 
 @media only screen and (max-width: 1500px) {
     #home-header, #contacts-header {
-        height: 52rem;
+        height: 54rem;
     }
 
     #about-header {
-        height: 81rem;
+        height: 90rem;
     }
 }
 
 @media only screen and (max-width: 1400px) {
-    #home-header {
-        height: 50rem;
-    }
-
-    #about-header {
-        height: 85rem;
-    }
-
-    #contacts-header {
+    #home-header, #contacts-header {
         height: 47rem;
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    #home-header {
-        height: 49rem;
-    }
-
     #about-header {
-        height: 92rem;
-    }
-
-    #contacts-header {
-        height: 44rem;
+        height: 96rem;
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    #contacts-header {
-        height: 40rem;
+    #home-header, #contacts-header {
+        height: 42rem;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    #about-header {
-        height: 96rem;
+    #home-header, #contacts-header {
+        height: 39rem;
     }
 
-    #contacts-header {
-        height: 38rem;
+    #about-header {
+        height: 102rem;
     }
 }
 
 /* Tablet Landscape */
 @media only screen and (max-width: 1000px) {
-    #home-header, #projects-header {
-        height: 47rem;
+    #projects-header {
+        height: 46rem;
     }
 
-    #about-header {
-        height: 100rem;
-    }
-}
-
-@media only screen and (max-width: 900px) {
     #about-header {
         height: 104rem;
     }
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 900px) {
+    #about-header {
+        height: 113rem;
+    }
+
     #projects-header {
         height: 115rem;
     }
 }
 
 @media only screen and (max-width: 800px) {
+    #home-header {
+        height: 40.5rem;
+    }
+
     #about-header {
-        height: 115rem;
+        height: 126rem;
     }
 }
 
 /* Tablet */
-@media only screen and (max-width: 740px) {
-    #home-header {
-        height:40.5rem;
-    }
-}
-
 @media only screen and (max-width: 700px) {
     #home-header {
         height:50.5rem;
     }
 
     #about-header {
-        height: 129rem;
+        height: 144rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    #home-header {
+        height:53rem;
+    }
+
     #about-header {
-        height: 146rem;
+        height: 169rem;
     }
 
     #contacts-header {
-        height: 60rem;
+        height: 62rem;
     }
 }
 
 /* Mobile */
 @media only screen and (max-width: 500px) {
     #home-header {
-        height:52rem;
+        height:54rem;
     }
 
     #about-header {
-        height: 173rem;
+        height: 214rem;
     }
 
     #contacts-header {
-        height: 61rem;
+        height: 63rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
     #home-header {
-        height:53rem;
+        height:62rem;
     }
-
+    
     #about-header {
-        height: 219rem;
+        height: 311rem;
     }
 
     #contacts-header {
-        height: 65rem;
+        height: 70rem;
     }
 }
 
-@media only screen and (max-width: 340px) {
-    #home-header {
-        height:59rem;
-    }
-
+@media only screen and (max-width: 300px) {
     #about-header {
-        height: 274rem;
-    }
-
-    #contacts-header {
-        height: 67rem;
+        height: 320rem;
     }
 }
 
@@ -520,12 +492,6 @@ nav a:hover {
 /* Mobile */
 @media only screen and (max-width: 400px) {
     #logoPic img {
-        height: 5rem;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    #logoPic img {
         height: 4rem;
         margin-top: 0.5rem;
     }
@@ -632,9 +598,7 @@ nav a:hover {
         font-size: smaller;
         margin-bottom: 0.3rem;
     }
-}
 
-@media only screen and (max-width: 880px) {
     .projects-box {
         flex-direction: column;
         padding-bottom: 5%;
