@@ -257,11 +257,17 @@ nav a:hover {
     }
 
     #about-header {
-        height: 214rem;
+        height: 203rem;
     }
 
     #contacts-header {
         height: 63rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #about-header {
+        height: 212rem;
     }
 }
 
@@ -271,7 +277,7 @@ nav a:hover {
     }
     
     #about-header {
-        height: 311rem;
+        height: 223rem;
     }
 
     #contacts-header {
@@ -279,9 +285,21 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 380px) {
     #about-header {
-        height: 320rem;
+        height: 233rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #about-header {
+        height: 250rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #about-header {
+        height: 267rem;
     }
 }
 
