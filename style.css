@@ -121,13 +121,19 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1920px) {
     #home-header, #projects-header, #contacts-header {
-        height: 65rem;
+        height: 54rem;
     }
 
     #about-header {
         height: 76rem;
+    }
+}
+
+@media only screen and (max-width: 1900px) {
+    #home-header, #projects-header, #contacts-header {
+        height: 65rem;
     }
 }
 
