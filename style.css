@@ -117,13 +117,18 @@ nav a:hover {
     }
 
     #about-header {
-        height: 76rem;
+        height: 83rem;
     }
 }
 
+/* Drogon-PC */
 @media only screen and (max-width: 1940px) {
     #home-header, #projects-header, #contacts-header {
         height: 55rem;
+    }
+
+    #about-header {
+        height: 85rem;
     }
 }
 
@@ -131,17 +136,25 @@ nav a:hover {
     #home-header, #projects-header, #contacts-header {
         height: 75rem;
     }
+
+    #about-header {
+        height: 86rem;
+    }
 }
 
 @media only screen and (max-width: 1800px) {
     #home-header, #projects-header, #contacts-header {
         height: 63rem;
     }
+
+    #about-header {
+        height: 87rem;
+    }
 }
 
 @media only screen and (max-width: 1700px) {
     #about-header {
-        height: 79rem;
+        height: 90rem;
     }
 }
 
@@ -152,7 +165,7 @@ nav a:hover {
     }
 
     #about-header {
-        height: 81rem;
+        height: 92rem;
     }
 }
 
@@ -162,7 +175,7 @@ nav a:hover {
     }
 
     #about-header {
-        height: 90rem;
+        height: 98rem;
     }
 }
 
@@ -170,17 +183,25 @@ nav a:hover {
     #home-header, #contacts-header {
         height: 47rem;
     }
+
+    #about-header {
+        height: 104rem;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
     #about-header {
-        height: 96rem;
+        height: 108rem;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     #home-header, #contacts-header {
         height: 42rem;
+    }
+
+    #about-header {
+        height: 112rem;
     }
 }
 
@@ -190,7 +211,7 @@ nav a:hover {
     }
 
     #about-header {
-        height: 102rem;
+        height: 118rem;
     }
 }
 
@@ -201,13 +222,13 @@ nav a:hover {
     }
 
     #about-header {
-        height: 104rem;
+        height: 122rem;
     }
 }
 
 @media only screen and (max-width: 900px) {
     #about-header {
-        height: 113rem;
+        height: 134rem;
     }
 
     #projects-header {
@@ -221,7 +242,7 @@ nav a:hover {
     }
 
     #about-header {
-        height: 126rem;
+        height: 150rem;
     }
 }
 
@@ -232,7 +253,7 @@ nav a:hover {
     }
 
     #about-header {
-        height: 144rem;
+        height: 170rem;
     }
 }
 
@@ -242,7 +263,7 @@ nav a:hover {
     }
 
     #about-header {
-        height: 169rem;
+        height: 200rem;
     }
 
     #contacts-header {
@@ -257,7 +278,7 @@ nav a:hover {
     }
 
     #about-header {
-        height: 203rem;
+        height: 235rem;
     }
 
     #contacts-header {
@@ -265,9 +286,15 @@ nav a:hover {
     }
 }
 
+@media only screen and (max-width: 440px) {
+    #about-header {
+        height: 244rem;
+    }
+}
+
 @media only screen and (max-width: 420px) {
     #about-header {
-        height: 212rem;
+        height: 259rem;
     }
 }
 
@@ -277,7 +304,7 @@ nav a:hover {
     }
     
     #about-header {
-        height: 223rem;
+        height: 274rem;
     }
 
     #contacts-header {
@@ -287,19 +314,13 @@ nav a:hover {
 
 @media only screen and (max-width: 380px) {
     #about-header {
-        height: 233rem;
+        height: 293rem;
     }
 }
 
 @media only screen and (max-width: 360px) {
     #about-header {
-        height: 250rem;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    #about-header {
-        height: 267rem;
+        height: 316rem;
     }
 }
 
