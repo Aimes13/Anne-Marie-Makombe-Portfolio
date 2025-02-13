@@ -404,7 +404,7 @@ nav a:hover {
     filter: hue-rotate(180deg) invert(100%) drop-shadow(-6px 6px 0px #000000);
 }
 
-.logo-box #sql {
+.logo-box #sql, .logo-box #php {
     max-height: 3.8rem;
 }
 
@@ -444,7 +444,7 @@ nav a:hover {
         max-height: 1.8rem;
     }
 
-    .logo-box #sql {
+    .logo-box #sql, .logo-box #php {
         max-height: 2.8rem;
     }
 }
