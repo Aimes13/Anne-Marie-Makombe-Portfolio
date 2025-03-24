@@ -30,7 +30,8 @@ html {
 body {
     display: flex;
     align-items: center;
-    background-image: url(https://www.teahub.io/photos/full/305-3057418_magenta-background-purple-gradient-background-hd.jpg);
+    background-image: url(https://i.pinimg.com/736x/4b/99/45/4b9945223b8b3216e5c0d186a255cbbc.jpg);
+    /*background-image: url(https://www.teahub.io/photos/full/305-3057418_magenta-background-purple-gradient-background-hd.jpg);*/
 }
 
 button {
@@ -504,6 +505,11 @@ nav a:hover {
     line-height: 1.9rem;
     text-align: left;
     padding: 1% 0;
+}
+
+#about1-box {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 0.5%;
 }
 
 #logoPic img {
